@@ -1,0 +1,9 @@
+#include "btlog.nxc"
+
+task main() {
+ init_bt_log();
+ while(true) {
+	bt_log("Test...");
+    Wait(500);
+ }
+}

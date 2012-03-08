@@ -1,0 +1,17 @@
+#include "btio.nxc"
+
+#define BT_CONN 0
+
+void init_bt_log() {
+    while( !BTCommCheck(BT_CONN) ) {
+         TextOut(0, LCD_LINE1, "No BT connection");
+         Wait(1000);
+    }
+    // PlayTone(262, 400);
+    TextOut(0, LCD_LINE1, "Connected!");
+}
+
+void bt_log(string message) {
+    BTSendMessage( BT_CONN, 1, message);
+}
+
