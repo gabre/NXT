@@ -1,0 +1,117 @@
+#define RIGHT_MOTOR OUT_A
+#define LEFT_MOTOR  OUT_B
+
+#define US_RIGHT        IN_1
+#define US_FRONT        IN_2
+#define INFINITY        true
+
+// TESTED VALUES:
+// WALL_DISTANCE_TARGET US_MAX_DISTANCE STEER_WHEN_OUTSIDE_A_CORNER STEER_WHEN_INSIDE_A_CORNER
+//					33				50							90  					  -90 		quite good, but it can go quite far from the wall, and some more steering may be needed (outer wall)
+// improvements:
+// - random walk when no wall found in ... rotations
+// - left sensor
+
+#define WALL_DISTANCE_TARGET                   33
+#define US_MAX_DISTANCE                        50
+
+#define STEER_DEGREE_MAX_TO_LEFT       		 -120
+#define STEER_WHEN_INSIDE_A_CORNER            -90
+#define STEER_WHEN_OUTSIDE_A_CORNER            90
+#define STEER_NORMAL_FORWARD					0
+
+#define WALL_PAST_WITH_THIS_TARGET            360
+
+#define US_THRESHOLD                           23
+
+#define DEFAULT_POWER						  20
+#define NORMALIZATION_TRESHOLD				  100
+#define STARTING_MOTOR_ROTATION_COUNT			0
+
+
+int normalizePower(int p){
+  if (p > NORMALIZATION_TRESHOLD){
+    return NORMALIZATION_TRESHOLD;
+  } else if (p < -1 * NORMALIZATION_TRESHOLD){
+    return -1 * NORMALIZATION_TRESHOLD;
+  }
+  return p;
+}
+
+bool is_wall_outer_edge_reached(int last_rotation_count_when_wall_seen){
+	return MotorRotationCount(RIGHT_MOTOR) < (last_rotation_count_when_wall_seen + WALL_PAST_WITH_THIS_TARGET);
+}
+
+int steer_outer_corner(int last_rotation_count_when_wall_seen){
+  if (is_wall_outer_edge_reached(last_rotation_count_when_wall_seen)){
+	return STEER_NORMAL_FORWARD;
+  } else {
+	return STEER_WHEN_OUTSIDE_A_CORNER;
+  }
+}
+
+bool is_wall_disappeared(int us_right_value){
+	return us_right_value > US_MAX_DISTANCE;
+}
+
+bool is_steering_left_too_much(int current_steer){
+	return current_steer < STEER_DEGREE_MAX_TO_LEFT;
+}
+
+bool is_front_wall_too_close(int frontal_us_sensor_value){
+	return (frontal_us_sensor_value < US_THRESHOLD);
+}
+
+bool is_steering_left_not_enough(int current_steer){
+	return current_steer > STEER_WHEN_INSIDE_A_CORNER;
+}
+
+bool is_bigger_left_steer_needed(int us_front_value, int current_steer){
+	return is_front_wall_too_close(us_front_value) && is_steering_left_not_enough(current_steer);
+}
+
+int steer_forward_or_take_inner_corner(int current_steer){
+  if (is_steering_left_too_much(current_steer)) {
+	return STEER_DEGREE_MAX_TO_LEFT;
+  } else {
+	int us_front_value = SensorUS(US_FRONT);
+	if (is_bigger_left_steer_needed(us_front_value, current_steer)){
+	  return STEER_WHEN_INSIDE_A_CORNER;
+	} else {
+	  return current_steer;
+	}
+  }
+}
+
+int calculate_suggested_steer_value(int us_right_value){
+	return us_right_value - WALL_DISTANCE_TARGET;
+}
+
+void set_motors(int robot_steer) {
+	OnFwd(LEFT_MOTOR, normalizePower(DEFAULT_POWER + robot_steer));
+    OnFwd(RIGHT_MOTOR, normalizePower(DEFAULT_POWER - robot_steer));
+}
+
+task main(){
+  int us_right_value;
+  int us_front_value;
+  long last_rotation_count_when_wall_seen = STARTING_MOTOR_ROTATION_COUNT;
+  int robot_steer;
+
+  SetSensorLowspeed(US_FRONT);
+  SetSensorLowspeed(US_RIGHT);
+
+  while(INFINITY){
+    us_right_value = SensorUS(US_RIGHT);
+	robot_steer = calculate_suggested_steer_value(us_right_value);
+
+    if (is_wall_disappeared(us_right_value)){
+      robot_steer = steer_outer_corner(last_rotation_count_when_wall_seen);
+    } else {
+      last_rotation_count_when_wall_seen = MotorRotationCount(RIGHT_MOTOR);
+	  robot_steer = steer_forward_or_take_inner_corner(robot_steer);
+    }
+
+    set_motors(robot_steer);
+  }
+}

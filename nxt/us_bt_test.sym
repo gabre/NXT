@@ -1,0 +1,633 @@
+#SYMBOLS
+Index	Identifier	Type	Flag	Data	Size	RefCount
+0	__DU0init_bt	5	1	0	4	2
+1	__D0init_bt	6	1	4	4	9
+2	__D0BTWait	6	1	8	4	10
+3	__DU0SetSensorLowspeed_inline_main	5	1	12	4	5
+4	__D0SetSensorLowspeed_inline_main	6	1	16	4	2
+5	__D0main	6	1	20	4	9
+6	__D0BTCommCheck	6	1	24	4	6
+7	__D0bt_send	6	1	28	4	2
+8	__SPTArgsMutex	9	0	32	4	6
+9	__DU0BTSendMessage	5	1	36	4	4
+10	__D0BTSendMessage	6	1	40	4	17
+11	__DU0BTCommCheck	5	1	44	4	3
+12	__signed_stack_001BTCommCheck	6	1	48	4	2
+13	__signed_stack_002main	6	1	52	4	2
+14	__signed_stack_001main	6	1	56	4	2
+15	__signed_stack_003init_bt	6	1	60	4	4
+16	__Wait_7qG2_ms_7qG2_000_inline_main	5	1	64	4	2
+17	__Wait_7qG2_ms_7qG2_000_inline_init_bt	5	1	68	4	2
+18	__signed_stack_003main	6	1	72	4	2
+19	__unsigned_stack_002BTSendMessage	5	1	76	4	4
+20	__signed_stack_002BTSendMessage	6	1	80	4	4
+21	__signed_stack_001BTSendMessage	6	1	84	4	12
+22	__signed_stack_002init_bt	6	1	88	4	8
+23	__signed_stack_001init_bt	6	1	92	4	8
+24	__signed_stack_001BTWait	6	1	96	4	2
+25	__CLSRMutex1	9	0	100	4	2
+26	__RLSBmutex1	9	0	104	4	2
+27	__CLSCSMutex1	9	0	108	4	2
+28	__CLSWMutex1	9	0	112	4	2
+29	__CBTCSMutex	9	0	116	4	4
+30	__BTCommCheck_7qG2_connection_7qG2_000	4	1	120	2	2
+31	__BTSendMessage_7qG2_i_7qG2_000	4	1	122	2	6
+32	__BTWait_7qG2_connection_7qG2_000	4	1	124	2	3
+33	__bt_send_7qG2_message_7qG2_000	4	1	126	2	2
+34	__main_7qG2_value_7qG2_001	4	1	128	2	2
+35	__BTCommCheck_return	1	1	130	1	4
+36	____ResetSensorSubroutine_return	1	1	131	1	3
+37	__ResetSensorTmp	1	1	132	1	2
+38	____initialize_global_data_return	1	1	133	1	3
+39	__ResetSensorPort	1	1	134	1	3
+40	__bt_send_return	1	1	135	1	3
+41	__BTWait_return	1	1	136	1	4
+42	__constVal59	2	0	137	1	1
+43	__constVal80	2	0	138	1	1
+44	__init_bt_return	1	1	139	1	3
+45	__constVal1	2	0	140	1	7
+46	__BTSendMessage_7qG2_mailbox_7qG2_000	1	1	141	1	2
+47	__BTSendMessage_7qG2_connection_7qG2_000	1	1	142	1	4
+48	__BTSendMessage_7qG2_len_7qG2_000	1	1	143	1	3
+49	__BTSendMessage_return	1	1	144	1	3
+50	__PFTmp	1	1	145	1	1
+51	__SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_main	1	1	146	1	2
+52	__RLSBResult1	2	1	147	1	7
+53	____ReadLSBytes1_return	1	1	148	1	3
+54	__SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_main	1	1	149	1	2
+55	__SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_main	1	1	150	1	2
+56	__SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_main	1	1	151	1	2
+57	__constVal0	2	1	152	1	3
+58	__RLSBytesCount1	1	1	153	1	7
+59	__RLSBIterations1	1	1	154	1	4
+60	__LSWriteOptionsVar	1	1	155	1	2
+61	__SetSensorLowspeed_7qG2_port_7qG2_000_inline_main	1	1	156	1	4
+62	__constVal15	2	0	157	1	1
+63	__SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_main	1	1	158	1	2
+64	__CLSWArgs1	8	0	4	12	5
+65	__CLSWArgs1.Result	2	1	160	1	5
+66	__CLSWArgs1.Port	1	1	161	1	5
+67	__CLSWArgs1.Buffer	7	0	162	4	5
+68	__CLSWArgs1.Buffer.Buffer_type	1	0	0	1	0
+69	__CLSWArgs1.ReturnLen	1	1	164	1	5
+70	__CBTCSArgs	8	0	2	4	6
+71	__CBTCSArgs.Result	2	1	168	1	6
+72	__CBTCSArgs.Connection	1	1	169	1	6
+73	__CLSCSArgs1	8	0	3	4	4
+74	__CLSCSArgs1.Result	2	1	172	1	4
+75	__CLSCSArgs1.Port	1	1	173	1	4
+76	__CLSCSArgs1.BytesReady	1	1	174	1	4
+77	__TextOutArgs	8	0	4	16	11
+78	__TextOutArgs.Result	2	1	176	1	11
+79	__TextOutArgs.Location	8	0	2	4	11
+80	__TextOutArgs.Location.X	4	1	180	2	11
+81	__TextOutArgs.Location.Y	4	1	182	2	11
+82	__TextOutArgs.Text	7	0	184	4	11
+83	__TextOutArgs.Text.Text_type	1	0	0	1	0
+84	__TextOutArgs.Options	5	1	188	4	11
+85	__CBTWArgs	8	0	3	8	4
+86	__CBTWArgs.Result	2	1	192	1	4
+87	__CBTWArgs.Connection	1	1	193	1	4
+88	__CBTWArgs.Buffer	7	0	194	4	4
+89	__CBTWArgs.Buffer.Buffer_type	1	0	0	1	0
+90	__CLSRArgs1	8	0	4	12	5
+91	__CLSRArgs1.Result	2	1	196	1	5
+92	__CLSRArgs1.Port	1	1	197	1	5
+93	__CLSRArgs1.Buffer	7	0	198	4	5
+94	__CLSRArgs1.Buffer.Buffer_type	1	0	0	1	0
+95	__CLSRArgs1.BufferLen	1	1	200	1	5
+96	__SPTArgs	8	0	5	8	18
+97	__SPTArgs.Result	2	1	204	1	18
+98	__SPTArgs.Frequency	3	1	206	2	18
+99	__SPTArgs.Duration	3	1	208	2	18
+100	__SPTArgs.Loop	1	1	210	1	18
+101	__SPTArgs.Volume	1	1	211	1	18
+102	__constStr0010	7	0	212	4	1
+103	__constStr0010.__constStr0010_type	1	1	0	1	0
+104	__constStr0009	7	0	214	4	1
+105	__constStr0009.__constStr0009_type	1	1	0	1	0
+106	__strbufBTSendMessage	7	0	216	4	2
+107	__strbufBTSendMessage.__strbufBTSendMessage_type	1	0	0	1	0
+108	__RLSLastGoodRead1	7	0	218	4	2
+109	__RLSLastGoodRead1.__RLSLastGoodRead1_type	1	0	0	1	0
+110	__strbufinit_bt	7	0	220	4	4
+111	__strbufinit_bt.__strbufinit_bt_type	1	0	0	1	0
+112	__strbufbt_send	7	0	222	4	2
+113	__strbufbt_send.__strbufbt_send_type	1	0	0	1	0
+114	__strretvalbt_send	7	0	224	4	2
+115	__strretvalbt_send.__strretvalbt_send_type	1	0	0	1	0
+116	__RLSReadBuf1	7	0	226	4	8
+117	__RLSReadBuf1.__RLSReadBuf1_type	1	0	0	1	0
+118	__RLSBbufLSWrite1	7	0	228	4	1
+119	__RLSBbufLSWrite1.__RLSBbufLSWrite1_type	1	0	0	1	0
+120	__BTSendMessage_7qG2_msg_7qG2_000	7	0	230	4	2
+121	__BTSendMessage_7qG2_msg_7qG2_000.__BTSendMessage_7qG2_msg_7qG2_000_type	1	0	0	1	0
+122	__StrToByteArray_7qG2_str_7qG2_000_inline_BTSendMessage	7	0	232	4	2
+123	__StrToByteArray_7qG2_str_7qG2_000_inline_BTSendMessage.__StrToByteArray_7qG2_str_7qG2_000_inline_BTSendMessage_type	1	0	0	1	0
+124	__StrToByteArray_7qG2_data_7qG2_000_inline_BTSendMessage	7	0	234	4	3
+125	__StrToByteArray_7qG2_data_7qG2_000_inline_BTSendMessage.__StrToByteArray_7qG2_data_7qG2_000_inline_BTSendMessage_type	1	0	0	1	0
+126	__LSWriteOptions	7	0	236	4	1
+127	__LSWriteOptions.__LSWriteOptions_type	1	0	0	1	0
+128	__buffer	7	0	238	4	12
+129	__buffer.__buffer_type	1	0	0	1	0
+130	__array	7	0	240	4	5
+131	__array.__array_type	1	0	0	1	0
+#SOURCES
+Clump	Line	PC	Source
+0	20	0	#line 20 "C:\Users\gabre\Documents\GitHub\NXT\nxt\us_bt_test.nxc"
+0	21	0		subcall __initialize_global_data, ____initialize_global_data_return
+0	20	2	#line 20 "C:\Users\gabre\Documents\GitHub\NXT\nxt\us_bt_test.nxc"
+0	20	2	#line 20 "C:\Users\gabre\Documents\GitHub\NXT\nxt\us_bt_test.nxc"
+0	21	2		set __SetSensorLowspeed_7qG2_port_7qG2_000_inline_main, 1
+0	20	5	#line 20 "C:\Users\gabre\Documents\GitHub\NXT\nxt\us_bt_test.nxc"
+0	20	5	#line 20 "C:\Users\gabre\Documents\GitHub\NXT\nxt\us_bt_test.nxc"
+0	21	5		mov __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_main, __constVal1
+0	4523	7	#line 4523 "NXCDefs.h"
+0	4524	7		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_main, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_main
+0	4523	9	#line 4523 "NXCDefs.h"
+0	4523	9	#line 4523 "NXCDefs.h"
+0	4524	9		mov __DU0SetSensorLowspeed_inline_main, __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_main
+0	4523	11	#line 4523 "NXCDefs.h"
+0	4524	11		tst 5, __D0SetSensorLowspeed_inline_main, __DU0SetSensorLowspeed_inline_main
+0	4523	14	#line 4523 "NXCDefs.h"
+0	4524	14		brtst 4, __004__ASM_Label_36, __D0SetSensorLowspeed_inline_main
+0	4523	17	#line 4523 "NXCDefs.h"
+0	4524	17		set __DU0SetSensorLowspeed_inline_main, 11
+0	4523	20	#line 4523 "NXCDefs.h"
+0	4523	20	#line 4523 "NXCDefs.h"
+0	4524	20		jmp __004__ASM_Label_37
+0	4523	22	#line 4523 "NXCDefs.h"
+0	4524	22		set __DU0SetSensorLowspeed_inline_main, 10
+0	4523	25	#line 4523 "NXCDefs.h"
+0	4523	25	#line 4523 "NXCDefs.h"
+0	4524	25		mov __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_main, __DU0SetSensorLowspeed_inline_main
+0	4428	27	#line 4428 "NXCDefs.h"
+0	4429	27		setin __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_main, __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_main, 0
+0	4428	31	#line 4428 "NXCDefs.h"
+0	4523	31	#line 4523 "NXCDefs.h"
+0	4524	31	#line 4524 "NXCDefs.h"
+0	4525	31		mov __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_main, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_main
+0	4524	33	#line 4524 "NXCDefs.h"
+0	4524	33	#line 4524 "NXCDefs.h"
+0	4525	33		set __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_main, 0
+0	4524	36	#line 4524 "NXCDefs.h"
+0	4441	36	#line 4441 "NXCDefs.h"
+0	4442	36		setin __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_main, __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_main, 1
+0	4441	40	#line 4441 "NXCDefs.h"
+0	4524	40	#line 4524 "NXCDefs.h"
+0	4525	40	#line 4525 "NXCDefs.h"
+0	4525	40	#line 4525 "NXCDefs.h"
+0	4459	40	#line 4459 "NXCDefs.h"
+0	4460	40	#pragma macro 4
+0	4460	40		mov __ResetSensorPort, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_main
+0	4460	42		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+0	4725	44	#line 4725 "NXCDefs.h"
+0	4459	44	#line 4459 "NXCDefs.h"
+0	4525	44	#line 4525 "NXCDefs.h"
+0	20	44	#line 20 "C:\Users\gabre\Documents\GitHub\NXT\nxt\us_bt_test.nxc"
+0	21	44	#line 21 "C:\Users\gabre\Documents\GitHub\NXT\nxt\us_bt_test.nxc"
+0	22	44		subcall init_bt, __init_bt_return
+0	21	46	#line 21 "C:\Users\gabre\Documents\GitHub\NXT\nxt\us_bt_test.nxc"
+0	23	46	#line 23 "C:\Users\gabre\Documents\GitHub\NXT\nxt\us_bt_test.nxc"
+0	24	46		set __D0main, 1
+0	24	49	#line 24 "C:\Users\gabre\Documents\GitHub\NXT\nxt\us_bt_test.nxc"
+0	25	49		tst 5, __D0main, __D0main
+0	24	52	#line 24 "C:\Users\gabre\Documents\GitHub\NXT\nxt\us_bt_test.nxc"
+0	25	52		brtst 4, __ASM_Label_651, __D0main
+0	24	55	#line 24 "C:\Users\gabre\Documents\GitHub\NXT\nxt\us_bt_test.nxc"
+0	25	55	#pragma macro 26
+0	25	55		acquire __RLSBmutex1
+0	25	56		mov __RLSReadBuf1, __RLSBbufLSWrite1
+0	25	58		set __RLSBytesCount1, 1
+0	25	61		wait2 NA, __constVal15
+0	25	64		subcall __ReadLSBytes1, ____ReadLSBytes1_return
+0	25	66		index __D0main, __RLSReadBuf1, 65535
+0	25	70		release __RLSBmutex1
+0	4744	71	#line 4744 "C:\Users\gabre\Documents\GitHub\NXT\nxt\us_bt_test.nxc"
+0	24	71	#line 24 "C:\Users\gabre\Documents\GitHub\NXT\nxt\us_bt_test.nxc"
+0	25	71		mov __main_7qG2_value_7qG2_001, __D0main
+0	25	73	#line 25 "C:\Users\gabre\Documents\GitHub\NXT\nxt\us_bt_test.nxc"
+0	26	73		set __signed_stack_001main, 262
+0	25	76	#line 25 "C:\Users\gabre\Documents\GitHub\NXT\nxt\us_bt_test.nxc"
+0	25	76	#line 25 "C:\Users\gabre\Documents\GitHub\NXT\nxt\us_bt_test.nxc"
+0	26	76		set __signed_stack_002main, 200
+0	25	79	#line 25 "C:\Users\gabre\Documents\GitHub\NXT\nxt\us_bt_test.nxc"
+0	25	79	#line 25 "C:\Users\gabre\Documents\GitHub\NXT\nxt\us_bt_test.nxc"
+0	26	79		set __signed_stack_003main, 4
+0	25	82	#line 25 "C:\Users\gabre\Documents\GitHub\NXT\nxt\us_bt_test.nxc"
+0	25	82	#line 25 "C:\Users\gabre\Documents\GitHub\NXT\nxt\us_bt_test.nxc"
+0	26	82		set __D0main, 0
+0	25	85	#line 25 "C:\Users\gabre\Documents\GitHub\NXT\nxt\us_bt_test.nxc"
+0	26	85		acquire __SPTArgsMutex
+0	25	86	#line 25 "C:\Users\gabre\Documents\GitHub\NXT\nxt\us_bt_test.nxc"
+0	26	86		mov __SPTArgs.Frequency, __signed_stack_001main
+0	25	88	#line 25 "C:\Users\gabre\Documents\GitHub\NXT\nxt\us_bt_test.nxc"
+0	26	88		mov __SPTArgs.Duration, __signed_stack_002main
+0	25	90	#line 25 "C:\Users\gabre\Documents\GitHub\NXT\nxt\us_bt_test.nxc"
+0	26	90		mov __SPTArgs.Volume, __signed_stack_003main
+0	25	92	#line 25 "C:\Users\gabre\Documents\GitHub\NXT\nxt\us_bt_test.nxc"
+0	26	92		mov __SPTArgs.Loop, __D0main
+0	25	94	#line 25 "C:\Users\gabre\Documents\GitHub\NXT\nxt\us_bt_test.nxc"
+0	26	94		syscall 10, __SPTArgs
+0	25	97	#line 25 "C:\Users\gabre\Documents\GitHub\NXT\nxt\us_bt_test.nxc"
+0	26	97		mov __D0main, __SPTArgs.Result
+0	25	99	#line 25 "C:\Users\gabre\Documents\GitHub\NXT\nxt\us_bt_test.nxc"
+0	26	99		release __SPTArgsMutex
+0	25	100	#line 25 "C:\Users\gabre\Documents\GitHub\NXT\nxt\us_bt_test.nxc"
+0	26	100	#line 26 "C:\Users\gabre\Documents\GitHub\NXT\nxt\us_bt_test.nxc"
+0	27	100		mov __bt_send_7qG2_message_7qG2_000, __main_7qG2_value_7qG2_001
+0	26	102	#line 26 "C:\Users\gabre\Documents\GitHub\NXT\nxt\us_bt_test.nxc"
+0	26	102	#line 26 "C:\Users\gabre\Documents\GitHub\NXT\nxt\us_bt_test.nxc"
+0	27	102		subcall bt_send, __bt_send_return
+0	26	104	#line 26 "C:\Users\gabre\Documents\GitHub\NXT\nxt\us_bt_test.nxc"
+0	27	104	#line 27 "C:\Users\gabre\Documents\GitHub\NXT\nxt\us_bt_test.nxc"
+0	28	104		set __Wait_7qG2_ms_7qG2_000_inline_main, 1000
+0	27	107	#line 27 "C:\Users\gabre\Documents\GitHub\NXT\nxt\us_bt_test.nxc"
+0	8869	107	#line 8869 "NXCDefs.h"
+0	8870	107		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_main
+0	8869	110	#line 8869 "NXCDefs.h"
+0	27	110	#line 27 "C:\Users\gabre\Documents\GitHub\NXT\nxt\us_bt_test.nxc"
+0	31	110	#line 31 "C:\Users\gabre\Documents\GitHub\NXT\nxt\us_bt_test.nxc"
+0	32	110		jmp __ASM_Label_650
+0	31	112	#line 31 "C:\Users\gabre\Documents\GitHub\NXT\nxt\us_bt_test.nxc"
+0	32	112		exit -1, -1
+1	5724	0		setin __constVal1, __ResetSensorPort, 5
+1	5726	4		getin __ResetSensorTmp, __ResetSensorPort, 5
+1	5727	8		brtst 5, __SensorStillInvalid, __ResetSensorTmp
+1	5728	11		subret ____ResetSensorSubroutine_return
+2	6558	0	#pragma macro 27
+2	6558	0		acquire __CLSWMutex1
+2	6558	1		index __LSWriteOptionsVar, __LSWriteOptions, __constVal1
+2	6558	5		or __CLSWArgs1.Port, __constVal1, __LSWriteOptionsVar
+2	6558	9		mov __CLSWArgs1.ReturnLen, __RLSBytesCount1
+2	6558	11		mov __CLSWArgs1.Buffer, __RLSReadBuf1
+2	6558	13		syscall 21, __CLSWArgs1
+2	6558	16		mov __RLSBResult1, __CLSWArgs1.Result
+2	6558	18		release __CLSWMutex1
+2	6558	19	#line 6558 "NXTDefs.h"
+2	6559	19		brtst 5, __RLSBError1, __RLSBResult1
+2	6560	22		set __RLSBIterations1, 60
+2	6562	25	#pragma macro 23
+2	6562	25		acquire __CLSCSMutex1
+2	6562	26		set __CLSCSArgs1.Port, 1
+2	6562	29		syscall 23, __CLSCSArgs1
+2	6562	32		mov __RLSBytesCount1, __CLSCSArgs1.BytesReady
+2	6562	34		mov __RLSBResult1, __CLSCSArgs1.Result
+2	6562	36		release __CLSCSMutex1
+2	6562	37	#line 6562 "NXTDefs.h"
+2	6563	37		sub __RLSBIterations1, __RLSBIterations1, __constVal1
+2	6564	41		brtst 2, __RLSBError1, __RLSBIterations1
+2	6565	44		brtst 0, __RLSBError1, __RLSBResult1
+2	6566	47		brtst 4, __RLSBReadyToRead1, __RLSBResult1
+2	6568	50		wait2 NA, __constVal1
+2	6569	53		jmp __RLSBDoCheckStatus1
+2	6571	55		brtst 4, __RLSBReturn1, __RLSBytesCount1
+2	6572	58		arrinit __RLSReadBuf1, __constVal0, __RLSBytesCount1
+2	6574	62	#pragma macro 25
+2	6574	62		acquire __CLSRMutex1
+2	6574	63		set __CLSRArgs1.Port, 1
+2	6574	66		mov __CLSRArgs1.BufferLen, __RLSBytesCount1
+2	6574	68		syscall 22, __CLSRArgs1
+2	6574	71		mov __RLSReadBuf1, __CLSRArgs1.Buffer
+2	6574	73		mov __RLSBResult1, __CLSRArgs1.Result
+2	6574	75		release __CLSRMutex1
+2	6574	76	#line 6574 "NXTDefs.h"
+2	6575	76		brtst 5, __RLSBError1, __RLSBResult1
+2	6576	79		mov __RLSLastGoodRead1, __RLSReadBuf1
+2	6577	81		jmp __RLSBDone1
+2	6579	83		mov __RLSReadBuf1, __RLSLastGoodRead1
+2	6581	85		arrsize __RLSBytesCount1, __RLSReadBuf1
+2	6583	88		subret ____ReadLSBytes1_return
+3	16	0	#line 16 "C:\Users\gabre\Documents\GitHub\NXT\nxt\.\btio.nxc"
+3	17	0	#pragma macro 5
+3	17	0		acquire __CBTCSMutex
+3	17	1		mov __CBTCSArgs.Connection, __BTCommCheck_7qG2_connection_7qG2_000
+3	17	3		syscall 28, __CBTCSArgs
+3	17	6		mov __D0BTCommCheck, __CBTCSArgs.Result
+3	17	8		release __CBTCSMutex
+3	4102	9	#line 4102 "C:\Users\gabre\Documents\GitHub\NXT\nxt\.\btio.nxc"
+3	16	9	#line 16 "C:\Users\gabre\Documents\GitHub\NXT\nxt\.\btio.nxc"
+3	17	9		mov __signed_stack_001BTCommCheck, __D0BTCommCheck
+3	16	11	#line 16 "C:\Users\gabre\Documents\GitHub\NXT\nxt\.\btio.nxc"
+3	17	11		set __D0BTCommCheck, 0
+3	16	14	#line 16 "C:\Users\gabre\Documents\GitHub\NXT\nxt\.\btio.nxc"
+3	17	14		cmp 4, __D0BTCommCheck, __signed_stack_001BTCommCheck, __D0BTCommCheck
+3	16	18	#line 16 "C:\Users\gabre\Documents\GitHub\NXT\nxt\.\btio.nxc"
+3	17	18		mov __DU0BTCommCheck, __D0BTCommCheck
+3	16	20	#line 16 "C:\Users\gabre\Documents\GitHub\NXT\nxt\.\btio.nxc"
+3	17	20		subret __BTCommCheck_return
+3	16	22	#line 16 "C:\Users\gabre\Documents\GitHub\NXT\nxt\.\btio.nxc"
+3	16	22	#line 16 "C:\Users\gabre\Documents\GitHub\NXT\nxt\.\btio.nxc"
+3	19	22	#line 19 "C:\Users\gabre\Documents\GitHub\NXT\nxt\.\btio.nxc"
+3	20	22		subret __BTCommCheck_return
+4	20	0	#line 20 "C:\Users\gabre\Documents\GitHub\NXT\nxt\.\btio.nxc"
+4	21	0	#pragma macro 5
+4	21	0		acquire __CBTCSMutex
+4	21	1		mov __CBTCSArgs.Connection, __BTWait_7qG2_connection_7qG2_000
+4	21	3		syscall 28, __CBTCSArgs
+4	21	6		mov __D0BTWait, __CBTCSArgs.Result
+4	21	8		release __CBTCSMutex
+4	4132	9	#line 4132 "C:\Users\gabre\Documents\GitHub\NXT\nxt\.\btio.nxc"
+4	20	9	#line 20 "C:\Users\gabre\Documents\GitHub\NXT\nxt\.\btio.nxc"
+4	21	9		mov __signed_stack_001BTWait, __D0BTWait
+4	20	11	#line 20 "C:\Users\gabre\Documents\GitHub\NXT\nxt\.\btio.nxc"
+4	21	11		set __D0BTWait, 0
+4	20	14	#line 20 "C:\Users\gabre\Documents\GitHub\NXT\nxt\.\btio.nxc"
+4	21	14		cmp 4, __D0BTWait, __signed_stack_001BTWait, __D0BTWait
+4	20	18	#line 20 "C:\Users\gabre\Documents\GitHub\NXT\nxt\.\btio.nxc"
+4	21	18		not __D0BTWait, __D0BTWait
+4	20	21	#line 20 "C:\Users\gabre\Documents\GitHub\NXT\nxt\.\btio.nxc"
+4	21	21		tst 5, __D0BTWait, __D0BTWait
+4	20	24	#line 20 "C:\Users\gabre\Documents\GitHub\NXT\nxt\.\btio.nxc"
+4	21	24		brtst 4, __ASM_Label_563, __D0BTWait
+4	20	27	#line 20 "C:\Users\gabre\Documents\GitHub\NXT\nxt\.\btio.nxc"
+4	20	27	#line 20 "C:\Users\gabre\Documents\GitHub\NXT\nxt\.\btio.nxc"
+4	21	27		jmp __ASM_Label_562
+4	20	29	#line 20 "C:\Users\gabre\Documents\GitHub\NXT\nxt\.\btio.nxc"
+4	23	29	#line 23 "C:\Users\gabre\Documents\GitHub\NXT\nxt\.\btio.nxc"
+4	24	29		subret __BTWait_return
+5	26	0	#line 26 "C:\Users\gabre\Documents\GitHub\NXT\nxt\.\btio.nxc"
+5	27	0		mov __BTWait_7qG2_connection_7qG2_000, __BTSendMessage_7qG2_connection_7qG2_000
+5	26	2	#line 26 "C:\Users\gabre\Documents\GitHub\NXT\nxt\.\btio.nxc"
+5	26	2	#line 26 "C:\Users\gabre\Documents\GitHub\NXT\nxt\.\btio.nxc"
+5	27	2		subcall BTWait, __BTWait_return
+5	26	4	#line 26 "C:\Users\gabre\Documents\GitHub\NXT\nxt\.\btio.nxc"
+5	27	4	#line 27 "C:\Users\gabre\Documents\GitHub\NXT\nxt\.\btio.nxc"
+5	28	4		arrinit __buffer, __constVal0, __constVal80
+5	27	8	#line 27 "C:\Users\gabre\Documents\GitHub\NXT\nxt\.\btio.nxc"
+5	27	8	#line 27 "C:\Users\gabre\Documents\GitHub\NXT\nxt\.\btio.nxc"
+5	28	8	#line 28 "C:\Users\gabre\Documents\GitHub\NXT\nxt\.\btio.nxc"
+5	29	8		arrinit __array, __constVal0, __constVal59
+5	28	12	#line 28 "C:\Users\gabre\Documents\GitHub\NXT\nxt\.\btio.nxc"
+5	28	12	#line 28 "C:\Users\gabre\Documents\GitHub\NXT\nxt\.\btio.nxc"
+5	29	12	#line 29 "C:\Users\gabre\Documents\GitHub\NXT\nxt\.\btio.nxc"
+5	30	12		strcat __strbufBTSendMessage, __BTSendMessage_7qG2_msg_7qG2_000
+5	29	16	#line 29 "C:\Users\gabre\Documents\GitHub\NXT\nxt\.\btio.nxc"
+5	30	16		mov __StrToByteArray_7qG2_str_7qG2_000_inline_BTSendMessage, __strbufBTSendMessage
+5	29	18	#line 29 "C:\Users\gabre\Documents\GitHub\NXT\nxt\.\btio.nxc"
+5	30	18		mov __StrToByteArray_7qG2_data_7qG2_000_inline_BTSendMessage, __array
+5	20696	20	#line 20696 "NXCDefs.h"
+5	20697	20		strtoarr __StrToByteArray_7qG2_data_7qG2_000_inline_BTSendMessage, __StrToByteArray_7qG2_str_7qG2_000_inline_BTSendMessage
+5	20696	23	#line 20696 "NXCDefs.h"
+5	29	23	#line 29 "C:\Users\gabre\Documents\GitHub\NXT\nxt\.\btio.nxc"
+5	30	23		mov __array, __StrToByteArray_7qG2_data_7qG2_000_inline_BTSendMessage
+5	29	25	#line 29 "C:\Users\gabre\Documents\GitHub\NXT\nxt\.\btio.nxc"
+5	30	25	#line 30 "C:\Users\gabre\Documents\GitHub\NXT\nxt\.\btio.nxc"
+5	31	25		arrsize __BTSendMessage_7qG2_len_7qG2_000, __array
+5	30	28	#line 30 "C:\Users\gabre\Documents\GitHub\NXT\nxt\.\btio.nxc"
+5	30	28	#line 30 "C:\Users\gabre\Documents\GitHub\NXT\nxt\.\btio.nxc"
+5	30	28	#line 30 "C:\Users\gabre\Documents\GitHub\NXT\nxt\.\btio.nxc"
+5	31	28	#line 31 "C:\Users\gabre\Documents\GitHub\NXT\nxt\.\btio.nxc"
+5	32	28		set __signed_stack_001BTSendMessage, 0
+5	31	31	#line 31 "C:\Users\gabre\Documents\GitHub\NXT\nxt\.\btio.nxc"
+5	31	31	#line 31 "C:\Users\gabre\Documents\GitHub\NXT\nxt\.\btio.nxc"
+5	32	31		set __D0BTSendMessage, 128
+5	31	34	#line 31 "C:\Users\gabre\Documents\GitHub\NXT\nxt\.\btio.nxc"
+5	32	34		replace __buffer, __buffer, __signed_stack_001BTSendMessage, __D0BTSendMessage
+5	31	39	#line 31 "C:\Users\gabre\Documents\GitHub\NXT\nxt\.\btio.nxc"
+5	32	39	#line 32 "C:\Users\gabre\Documents\GitHub\NXT\nxt\.\btio.nxc"
+5	33	39		set __signed_stack_001BTSendMessage, 1
+5	32	42	#line 32 "C:\Users\gabre\Documents\GitHub\NXT\nxt\.\btio.nxc"
+5	32	42	#line 32 "C:\Users\gabre\Documents\GitHub\NXT\nxt\.\btio.nxc"
+5	33	42		set __D0BTSendMessage, 9
+5	32	45	#line 32 "C:\Users\gabre\Documents\GitHub\NXT\nxt\.\btio.nxc"
+5	33	45		replace __buffer, __buffer, __signed_stack_001BTSendMessage, __D0BTSendMessage
+5	32	50	#line 32 "C:\Users\gabre\Documents\GitHub\NXT\nxt\.\btio.nxc"
+5	33	50	#line 33 "C:\Users\gabre\Documents\GitHub\NXT\nxt\.\btio.nxc"
+5	34	50		set __signed_stack_001BTSendMessage, 2
+5	33	53	#line 33 "C:\Users\gabre\Documents\GitHub\NXT\nxt\.\btio.nxc"
+5	33	53	#line 33 "C:\Users\gabre\Documents\GitHub\NXT\nxt\.\btio.nxc"
+5	34	53		mov __DU0BTSendMessage, __BTSendMessage_7qG2_mailbox_7qG2_000
+5	33	55	#line 33 "C:\Users\gabre\Documents\GitHub\NXT\nxt\.\btio.nxc"
+5	34	55		replace __buffer, __buffer, __signed_stack_001BTSendMessage, __DU0BTSendMessage
+5	33	60	#line 33 "C:\Users\gabre\Documents\GitHub\NXT\nxt\.\btio.nxc"
+5	34	60	#line 34 "C:\Users\gabre\Documents\GitHub\NXT\nxt\.\btio.nxc"
+5	35	60		set __signed_stack_001BTSendMessage, 3
+5	34	63	#line 34 "C:\Users\gabre\Documents\GitHub\NXT\nxt\.\btio.nxc"
+5	34	63	#line 34 "C:\Users\gabre\Documents\GitHub\NXT\nxt\.\btio.nxc"
+5	35	63		mov __unsigned_stack_002BTSendMessage, __BTSendMessage_7qG2_len_7qG2_000
+5	34	65	#line 34 "C:\Users\gabre\Documents\GitHub\NXT\nxt\.\btio.nxc"
+5	34	65	#line 34 "C:\Users\gabre\Documents\GitHub\NXT\nxt\.\btio.nxc"
+5	35	65		set __D0BTSendMessage, 1
+5	34	68	#line 34 "C:\Users\gabre\Documents\GitHub\NXT\nxt\.\btio.nxc"
+5	35	68		add __D0BTSendMessage, __unsigned_stack_002BTSendMessage, __D0BTSendMessage
+5	34	72	#line 34 "C:\Users\gabre\Documents\GitHub\NXT\nxt\.\btio.nxc"
+5	35	72		replace __buffer, __buffer, __signed_stack_001BTSendMessage, __D0BTSendMessage
+5	34	77	#line 34 "C:\Users\gabre\Documents\GitHub\NXT\nxt\.\btio.nxc"
+5	35	77	#line 35 "C:\Users\gabre\Documents\GitHub\NXT\nxt\.\btio.nxc"
+5	36	77		set __BTSendMessage_7qG2_i_7qG2_000, 4
+5	35	80	#line 35 "C:\Users\gabre\Documents\GitHub\NXT\nxt\.\btio.nxc"
+5	35	80	#line 35 "C:\Users\gabre\Documents\GitHub\NXT\nxt\.\btio.nxc"
+5	36	80		mov __signed_stack_001BTSendMessage, __BTSendMessage_7qG2_i_7qG2_000
+5	35	82	#line 35 "C:\Users\gabre\Documents\GitHub\NXT\nxt\.\btio.nxc"
+5	35	82	#line 35 "C:\Users\gabre\Documents\GitHub\NXT\nxt\.\btio.nxc"
+5	36	82		mov __unsigned_stack_002BTSendMessage, __BTSendMessage_7qG2_len_7qG2_000
+5	35	84	#line 35 "C:\Users\gabre\Documents\GitHub\NXT\nxt\.\btio.nxc"
+5	35	84	#line 35 "C:\Users\gabre\Documents\GitHub\NXT\nxt\.\btio.nxc"
+5	36	84		set __D0BTSendMessage, 4
+5	35	87	#line 35 "C:\Users\gabre\Documents\GitHub\NXT\nxt\.\btio.nxc"
+5	36	87		add __D0BTSendMessage, __unsigned_stack_002BTSendMessage, __D0BTSendMessage
+5	35	91	#line 35 "C:\Users\gabre\Documents\GitHub\NXT\nxt\.\btio.nxc"
+5	36	91		cmp 0, __D0BTSendMessage, __signed_stack_001BTSendMessage, __D0BTSendMessage
+5	35	95	#line 35 "C:\Users\gabre\Documents\GitHub\NXT\nxt\.\btio.nxc"
+5	36	95		brtst 4, __ASM_Label_589, __D0BTSendMessage
+5	35	98	#line 35 "C:\Users\gabre\Documents\GitHub\NXT\nxt\.\btio.nxc"
+5	36	98		jmp __ASM_Label_590
+5	35	100	#line 35 "C:\Users\gabre\Documents\GitHub\NXT\nxt\.\btio.nxc"
+5	36	100		add __BTSendMessage_7qG2_i_7qG2_000, __BTSendMessage_7qG2_i_7qG2_000, __constVal1
+5	36	104	#line 36 "C:\Users\gabre\Documents\GitHub\NXT\nxt\.\btio.nxc"
+5	37	104		jmp __ASM_Label_588
+5	36	106	#line 36 "C:\Users\gabre\Documents\GitHub\NXT\nxt\.\btio.nxc"
+5	37	106		mov __signed_stack_001BTSendMessage, __BTSendMessage_7qG2_i_7qG2_000
+5	36	108	#line 36 "C:\Users\gabre\Documents\GitHub\NXT\nxt\.\btio.nxc"
+5	36	108	#line 36 "C:\Users\gabre\Documents\GitHub\NXT\nxt\.\btio.nxc"
+5	37	108		mov __signed_stack_002BTSendMessage, __BTSendMessage_7qG2_i_7qG2_000
+5	36	110	#line 36 "C:\Users\gabre\Documents\GitHub\NXT\nxt\.\btio.nxc"
+5	36	110	#line 36 "C:\Users\gabre\Documents\GitHub\NXT\nxt\.\btio.nxc"
+5	37	110		set __D0BTSendMessage, 4
+5	36	113	#line 36 "C:\Users\gabre\Documents\GitHub\NXT\nxt\.\btio.nxc"
+5	37	113		sub __signed_stack_002BTSendMessage, __signed_stack_002BTSendMessage, __D0BTSendMessage
+5	36	117	#line 36 "C:\Users\gabre\Documents\GitHub\NXT\nxt\.\btio.nxc"
+5	36	117	#line 36 "C:\Users\gabre\Documents\GitHub\NXT\nxt\.\btio.nxc"
+5	37	117		index __DU0BTSendMessage, __array, __signed_stack_002BTSendMessage
+5	36	121	#line 36 "C:\Users\gabre\Documents\GitHub\NXT\nxt\.\btio.nxc"
+5	36	121	#line 36 "C:\Users\gabre\Documents\GitHub\NXT\nxt\.\btio.nxc"
+5	37	121		replace __buffer, __buffer, __signed_stack_001BTSendMessage, __DU0BTSendMessage
+5	36	126	#line 36 "C:\Users\gabre\Documents\GitHub\NXT\nxt\.\btio.nxc"
+5	38	126	#line 38 "C:\Users\gabre\Documents\GitHub\NXT\nxt\.\btio.nxc"
+5	39	126		jmp __ASM_Label_591
+5	38	128	#line 38 "C:\Users\gabre\Documents\GitHub\NXT\nxt\.\btio.nxc"
+5	38	128	#line 38 "C:\Users\gabre\Documents\GitHub\NXT\nxt\.\btio.nxc"
+5	39	128	#pragma macro 6
+5	39	128		mov __CBTWArgs.Connection, __BTSendMessage_7qG2_connection_7qG2_000
+5	39	130		mov __CBTWArgs.Buffer, __buffer
+5	39	132		syscall 29, __CBTWArgs
+5	39	135		mov __D0BTSendMessage, __CBTWArgs.Result
+5	4363	137	#line 4363 "C:\Users\gabre\Documents\GitHub\NXT\nxt\.\btio.nxc"
+5	38	137	#line 38 "C:\Users\gabre\Documents\GitHub\NXT\nxt\.\btio.nxc"
+5	38	137	#line 38 "C:\Users\gabre\Documents\GitHub\NXT\nxt\.\btio.nxc"
+5	39	137	#line 39 "C:\Users\gabre\Documents\GitHub\NXT\nxt\.\btio.nxc"
+5	40	137		mov __BTWait_7qG2_connection_7qG2_000, __BTSendMessage_7qG2_connection_7qG2_000
+5	39	139	#line 39 "C:\Users\gabre\Documents\GitHub\NXT\nxt\.\btio.nxc"
+5	39	139	#line 39 "C:\Users\gabre\Documents\GitHub\NXT\nxt\.\btio.nxc"
+5	40	139		subcall BTWait, __BTWait_return
+5	39	141	#line 39 "C:\Users\gabre\Documents\GitHub\NXT\nxt\.\btio.nxc"
+5	42	141	#line 42 "C:\Users\gabre\Documents\GitHub\NXT\nxt\.\btio.nxc"
+5	43	141		subret __BTSendMessage_return
+6	6	0	#line 6 "C:\Users\gabre\Documents\GitHub\NXT\nxt\us_bt_test.nxc"
+6	7	0		set __BTCommCheck_7qG2_connection_7qG2_000, 0
+6	6	3	#line 6 "C:\Users\gabre\Documents\GitHub\NXT\nxt\us_bt_test.nxc"
+6	6	3	#line 6 "C:\Users\gabre\Documents\GitHub\NXT\nxt\us_bt_test.nxc"
+6	7	3		subcall BTCommCheck, __BTCommCheck_return
+6	6	5	#line 6 "C:\Users\gabre\Documents\GitHub\NXT\nxt\us_bt_test.nxc"
+6	6	5	#line 6 "C:\Users\gabre\Documents\GitHub\NXT\nxt\us_bt_test.nxc"
+6	7	5		not __DU0init_bt, __DU0BTCommCheck
+6	7	8	#line 7 "C:\Users\gabre\Documents\GitHub\NXT\nxt\us_bt_test.nxc"
+6	8	8		tst 5, __D0init_bt, __DU0init_bt
+6	7	11	#line 7 "C:\Users\gabre\Documents\GitHub\NXT\nxt\us_bt_test.nxc"
+6	8	11		brtst 4, __ASM_Label_611, __D0init_bt
+6	7	14	#line 7 "C:\Users\gabre\Documents\GitHub\NXT\nxt\us_bt_test.nxc"
+6	8	14		set __signed_stack_001init_bt, 0
+6	7	17	#line 7 "C:\Users\gabre\Documents\GitHub\NXT\nxt\us_bt_test.nxc"
+6	7	17	#line 7 "C:\Users\gabre\Documents\GitHub\NXT\nxt\us_bt_test.nxc"
+6	8	17		set __signed_stack_002init_bt, 56
+6	7	20	#line 7 "C:\Users\gabre\Documents\GitHub\NXT\nxt\us_bt_test.nxc"
+6	7	20	#line 7 "C:\Users\gabre\Documents\GitHub\NXT\nxt\us_bt_test.nxc"
+6	8	20		strcat __strbufinit_bt, __constStr0009
+6	7	24	#line 7 "C:\Users\gabre\Documents\GitHub\NXT\nxt\us_bt_test.nxc"
+6	7	24	#line 7 "C:\Users\gabre\Documents\GitHub\NXT\nxt\us_bt_test.nxc"
+6	8	24		mov __TextOutArgs.Location.X, __signed_stack_001init_bt
+6	7	26	#line 7 "C:\Users\gabre\Documents\GitHub\NXT\nxt\us_bt_test.nxc"
+6	8	26		mov __TextOutArgs.Location.Y, __signed_stack_002init_bt
+6	7	28	#line 7 "C:\Users\gabre\Documents\GitHub\NXT\nxt\us_bt_test.nxc"
+6	8	28		set __TextOutArgs.Options, 0
+6	7	31	#line 7 "C:\Users\gabre\Documents\GitHub\NXT\nxt\us_bt_test.nxc"
+6	8	31		mov __TextOutArgs.Text, __strbufinit_bt
+6	7	33	#line 7 "C:\Users\gabre\Documents\GitHub\NXT\nxt\us_bt_test.nxc"
+6	8	33		syscall 13, __TextOutArgs
+6	7	36	#line 7 "C:\Users\gabre\Documents\GitHub\NXT\nxt\us_bt_test.nxc"
+6	7	36	#line 7 "C:\Users\gabre\Documents\GitHub\NXT\nxt\us_bt_test.nxc"
+6	7	36	#line 7 "C:\Users\gabre\Documents\GitHub\NXT\nxt\us_bt_test.nxc"
+6	8	36	#line 8 "C:\Users\gabre\Documents\GitHub\NXT\nxt\us_bt_test.nxc"
+6	9	36		set __signed_stack_001init_bt, 100
+6	8	39	#line 8 "C:\Users\gabre\Documents\GitHub\NXT\nxt\us_bt_test.nxc"
+6	8	39	#line 8 "C:\Users\gabre\Documents\GitHub\NXT\nxt\us_bt_test.nxc"
+6	9	39		set __signed_stack_002init_bt, 1000
+6	8	42	#line 8 "C:\Users\gabre\Documents\GitHub\NXT\nxt\us_bt_test.nxc"
+6	8	42	#line 8 "C:\Users\gabre\Documents\GitHub\NXT\nxt\us_bt_test.nxc"
+6	9	42		set __signed_stack_003init_bt, 4
+6	8	45	#line 8 "C:\Users\gabre\Documents\GitHub\NXT\nxt\us_bt_test.nxc"
+6	8	45	#line 8 "C:\Users\gabre\Documents\GitHub\NXT\nxt\us_bt_test.nxc"
+6	9	45		set __D0init_bt, 0
+6	8	48	#line 8 "C:\Users\gabre\Documents\GitHub\NXT\nxt\us_bt_test.nxc"
+6	9	48		acquire __SPTArgsMutex
+6	8	49	#line 8 "C:\Users\gabre\Documents\GitHub\NXT\nxt\us_bt_test.nxc"
+6	9	49		mov __SPTArgs.Frequency, __signed_stack_001init_bt
+6	8	51	#line 8 "C:\Users\gabre\Documents\GitHub\NXT\nxt\us_bt_test.nxc"
+6	9	51		mov __SPTArgs.Duration, __signed_stack_002init_bt
+6	8	53	#line 8 "C:\Users\gabre\Documents\GitHub\NXT\nxt\us_bt_test.nxc"
+6	9	53		mov __SPTArgs.Volume, __signed_stack_003init_bt
+6	8	55	#line 8 "C:\Users\gabre\Documents\GitHub\NXT\nxt\us_bt_test.nxc"
+6	9	55		mov __SPTArgs.Loop, __D0init_bt
+6	8	57	#line 8 "C:\Users\gabre\Documents\GitHub\NXT\nxt\us_bt_test.nxc"
+6	9	57		syscall 10, __SPTArgs
+6	8	60	#line 8 "C:\Users\gabre\Documents\GitHub\NXT\nxt\us_bt_test.nxc"
+6	9	60		mov __D0init_bt, __SPTArgs.Result
+6	8	62	#line 8 "C:\Users\gabre\Documents\GitHub\NXT\nxt\us_bt_test.nxc"
+6	9	62		release __SPTArgsMutex
+6	8	63	#line 8 "C:\Users\gabre\Documents\GitHub\NXT\nxt\us_bt_test.nxc"
+6	9	63	#line 9 "C:\Users\gabre\Documents\GitHub\NXT\nxt\us_bt_test.nxc"
+6	10	63		set __Wait_7qG2_ms_7qG2_000_inline_init_bt, 1000
+6	9	66	#line 9 "C:\Users\gabre\Documents\GitHub\NXT\nxt\us_bt_test.nxc"
+6	8869	66	#line 8869 "NXCDefs.h"
+6	8870	66		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_init_bt
+6	8869	69	#line 8869 "NXCDefs.h"
+6	9	69	#line 9 "C:\Users\gabre\Documents\GitHub\NXT\nxt\us_bt_test.nxc"
+6	11	69	#line 11 "C:\Users\gabre\Documents\GitHub\NXT\nxt\us_bt_test.nxc"
+6	12	69		jmp __ASM_Label_610
+6	11	71	#line 11 "C:\Users\gabre\Documents\GitHub\NXT\nxt\us_bt_test.nxc"
+6	11	71	#line 11 "C:\Users\gabre\Documents\GitHub\NXT\nxt\us_bt_test.nxc"
+6	12	71		set __signed_stack_001init_bt, 262
+6	11	74	#line 11 "C:\Users\gabre\Documents\GitHub\NXT\nxt\us_bt_test.nxc"
+6	11	74	#line 11 "C:\Users\gabre\Documents\GitHub\NXT\nxt\us_bt_test.nxc"
+6	12	74		set __signed_stack_002init_bt, 1000
+6	11	77	#line 11 "C:\Users\gabre\Documents\GitHub\NXT\nxt\us_bt_test.nxc"
+6	11	77	#line 11 "C:\Users\gabre\Documents\GitHub\NXT\nxt\us_bt_test.nxc"
+6	12	77		set __signed_stack_003init_bt, 4
+6	11	80	#line 11 "C:\Users\gabre\Documents\GitHub\NXT\nxt\us_bt_test.nxc"
+6	11	80	#line 11 "C:\Users\gabre\Documents\GitHub\NXT\nxt\us_bt_test.nxc"
+6	12	80		set __D0init_bt, 0
+6	11	83	#line 11 "C:\Users\gabre\Documents\GitHub\NXT\nxt\us_bt_test.nxc"
+6	12	83		acquire __SPTArgsMutex
+6	11	84	#line 11 "C:\Users\gabre\Documents\GitHub\NXT\nxt\us_bt_test.nxc"
+6	12	84		mov __SPTArgs.Frequency, __signed_stack_001init_bt
+6	11	86	#line 11 "C:\Users\gabre\Documents\GitHub\NXT\nxt\us_bt_test.nxc"
+6	12	86		mov __SPTArgs.Duration, __signed_stack_002init_bt
+6	11	88	#line 11 "C:\Users\gabre\Documents\GitHub\NXT\nxt\us_bt_test.nxc"
+6	12	88		mov __SPTArgs.Volume, __signed_stack_003init_bt
+6	11	90	#line 11 "C:\Users\gabre\Documents\GitHub\NXT\nxt\us_bt_test.nxc"
+6	12	90		mov __SPTArgs.Loop, __D0init_bt
+6	11	92	#line 11 "C:\Users\gabre\Documents\GitHub\NXT\nxt\us_bt_test.nxc"
+6	12	92		syscall 10, __SPTArgs
+6	11	95	#line 11 "C:\Users\gabre\Documents\GitHub\NXT\nxt\us_bt_test.nxc"
+6	12	95		mov __D0init_bt, __SPTArgs.Result
+6	11	97	#line 11 "C:\Users\gabre\Documents\GitHub\NXT\nxt\us_bt_test.nxc"
+6	12	97		release __SPTArgsMutex
+6	11	98	#line 11 "C:\Users\gabre\Documents\GitHub\NXT\nxt\us_bt_test.nxc"
+6	12	98	#line 12 "C:\Users\gabre\Documents\GitHub\NXT\nxt\us_bt_test.nxc"
+6	13	98		set __signed_stack_001init_bt, 0
+6	12	101	#line 12 "C:\Users\gabre\Documents\GitHub\NXT\nxt\us_bt_test.nxc"
+6	12	101	#line 12 "C:\Users\gabre\Documents\GitHub\NXT\nxt\us_bt_test.nxc"
+6	13	101		set __signed_stack_002init_bt, 56
+6	12	104	#line 12 "C:\Users\gabre\Documents\GitHub\NXT\nxt\us_bt_test.nxc"
+6	12	104	#line 12 "C:\Users\gabre\Documents\GitHub\NXT\nxt\us_bt_test.nxc"
+6	13	104		strcat __strbufinit_bt, __constStr0010
+6	12	108	#line 12 "C:\Users\gabre\Documents\GitHub\NXT\nxt\us_bt_test.nxc"
+6	12	108	#line 12 "C:\Users\gabre\Documents\GitHub\NXT\nxt\us_bt_test.nxc"
+6	13	108		mov __TextOutArgs.Location.X, __signed_stack_001init_bt
+6	12	110	#line 12 "C:\Users\gabre\Documents\GitHub\NXT\nxt\us_bt_test.nxc"
+6	13	110		mov __TextOutArgs.Location.Y, __signed_stack_002init_bt
+6	12	112	#line 12 "C:\Users\gabre\Documents\GitHub\NXT\nxt\us_bt_test.nxc"
+6	13	112		set __TextOutArgs.Options, 0
+6	12	115	#line 12 "C:\Users\gabre\Documents\GitHub\NXT\nxt\us_bt_test.nxc"
+6	13	115		mov __TextOutArgs.Text, __strbufinit_bt
+6	12	117	#line 12 "C:\Users\gabre\Documents\GitHub\NXT\nxt\us_bt_test.nxc"
+6	13	117		syscall 13, __TextOutArgs
+6	12	120	#line 12 "C:\Users\gabre\Documents\GitHub\NXT\nxt\us_bt_test.nxc"
+6	13	120		mov __D0init_bt, __TextOutArgs.Result
+6	12	122	#line 12 "C:\Users\gabre\Documents\GitHub\NXT\nxt\us_bt_test.nxc"
+6	12	122	#line 12 "C:\Users\gabre\Documents\GitHub\NXT\nxt\us_bt_test.nxc"
+6	15	122	#line 15 "C:\Users\gabre\Documents\GitHub\NXT\nxt\us_bt_test.nxc"
+6	16	122		subret __init_bt_return
+7	16	0	#line 16 "C:\Users\gabre\Documents\GitHub\NXT\nxt\us_bt_test.nxc"
+7	17	0		set __BTSendMessage_7qG2_connection_7qG2_000, 0
+7	16	3	#line 16 "C:\Users\gabre\Documents\GitHub\NXT\nxt\us_bt_test.nxc"
+7	16	3	#line 16 "C:\Users\gabre\Documents\GitHub\NXT\nxt\us_bt_test.nxc"
+7	17	3		set __BTSendMessage_7qG2_mailbox_7qG2_000, 1
+7	16	6	#line 16 "C:\Users\gabre\Documents\GitHub\NXT\nxt\us_bt_test.nxc"
+7	16	6	#line 16 "C:\Users\gabre\Documents\GitHub\NXT\nxt\us_bt_test.nxc"
+7	17	6		mov __D0bt_send, __bt_send_7qG2_message_7qG2_000
+7	16	8	#line 16 "C:\Users\gabre\Documents\GitHub\NXT\nxt\us_bt_test.nxc"
+7	17	8		numtostr __strretvalbt_send, __D0bt_send
+7	16	11	#line 16 "C:\Users\gabre\Documents\GitHub\NXT\nxt\us_bt_test.nxc"
+7	17	11		strcat __strbufbt_send, __strretvalbt_send
+7	16	15	#line 16 "C:\Users\gabre\Documents\GitHub\NXT\nxt\us_bt_test.nxc"
+7	17	15		mov __BTSendMessage_7qG2_msg_7qG2_000, __strbufbt_send
+7	16	17	#line 16 "C:\Users\gabre\Documents\GitHub\NXT\nxt\us_bt_test.nxc"
+7	17	17		subcall BTSendMessage, __BTSendMessage_return
+7	16	19	#line 16 "C:\Users\gabre\Documents\GitHub\NXT\nxt\us_bt_test.nxc"
+7	19	19	#line 19 "C:\Users\gabre\Documents\GitHub\NXT\nxt\us_bt_test.nxc"
+7	20	19		subret __bt_send_return
+8	32	0	#line 32 "C:\Users\gabre\Documents\GitHub\NXT\nxt\us_bt_test.nxc"
+8	33	0		subret ____initialize_global_data_return
+#CLUMPS
+Clump	Name	Offset	File
+0	main	0	C:\Users\gabre\Documents\GitHub\NXT\nxt\us_bt_test.nxc
+1	__ResetSensorSubroutine	115	NXTDefs.h
+2	__ReadLSBytes1	128	NXTDefs.h
+3	BTCommCheck	218	C:\Users\gabre\Documents\GitHub\NXT\nxt\.\btio.nxc
+4	BTWait	242	C:\Users\gabre\Documents\GitHub\NXT\nxt\.\btio.nxc
+5	BTSendMessage	273	C:\Users\gabre\Documents\GitHub\NXT\nxt\.\btio.nxc
+6	init_bt	416	C:\Users\gabre\Documents\GitHub\NXT\nxt\us_bt_test.nxc
+7	bt_send	540	C:\Users\gabre\Documents\GitHub\NXT\nxt\us_bt_test.nxc
+8	__initialize_global_data	561	C:\Users\gabre\Documents\GitHub\NXT\nxt\us_bt_test.nxc

@@ -1,0 +1,30 @@
+#include "btio.nxc"
+
+#define US_FRONT        IN_2
+#define BT_CONN 1
+
+void init_bt() {
+    while( !BTCommCheck(BT_CONN) ) {
+         TextOut(0, LCD_LINE1, "No BT connection");
+         PlayTone(100, 1000);
+         Wait(1000);
+    }
+    PlayTone(262, 1000);
+    TextOut(0, LCD_LINE1, "Connected!");
+}
+
+void bt_send(int message) {
+    BTSendMessage( BT_CONN, 1, NumToStr(message));
+}
+
+task main() {
+ SetSensorLowspeed(US_FRONT);
+ init_bt();
+ 
+ while(true) {
+ 	int value = SensorUS(US_FRONT);
+ 	PlayTone(262, 200);
+ 	bt_send(value);
+ 	Wait(1000);
+ }
+}
