@@ -73,6 +73,10 @@ public class NxtBrick {
     public List<NxtMessage> messages() {
         return reader.getMessages();
     }
+    
+    public NxtMessage getOldestMessage() {
+        return reader.getFirstMessage();
+    }    
 
     public void send(int mailbox, String s) {
         NxtMessage msg = new NxtMessage(NxtMessage.Type.INCOMING, mailbox, s, false);

@@ -80,4 +80,12 @@ public class NxtMessage {
 
         return cmd;
     }
+    
+    public int getValue() {
+    	return mailbox;
+    }
+    
+    public String getString() {
+    	return Integer.toString(mailbox);
+    }
 }

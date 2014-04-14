@@ -24,15 +24,17 @@ import java.util.LinkedList;
 import java.util.List;
 
 public class NxtReaderThread extends Thread {
-    private InputStream is;
-    private OutputStream os;
+    private static final int sizeReadingState = 0;
+	private static final int valueReadingState = 1;
+	private InputStream inputstream;
+    private OutputStream outputstream;
     private List<NxtMessage> queue;
     private boolean terminated;
     private Logger logger;
 
     public NxtReaderThread(Logger aLogger, InputStream inputStream, OutputStream outputStream) {
-        is = inputStream;
-        os = outputStream;
+        inputstream = inputStream;
+        outputstream = outputStream;
         logger = aLogger;
     }
 
@@ -40,6 +42,10 @@ public class NxtReaderThread extends Thread {
         List<NxtMessage> messages = queue;
         queue.clear();
         return messages;
+    }
+    
+    public synchronized NxtMessage getFirstMessage() {
+        return queue.remove(0);
     }
 
     public synchronized int getInAvail() {
@@ -56,40 +62,46 @@ public class NxtReaderThread extends Thread {
             terminated = false;
 
             while (!terminated) {
-                // looks awkward
-                try {
-                    sleep(1);
-                } catch (java.lang.InterruptedException ignored) { }
+                sleepIfPossible();
+                if (tooFewDataAvailable()) continue;
 
-                if (state == 0) {
-                    if (is.available() < 2) continue;
-
-                    is.read(prolog, 0, 2);
+                if (state == sizeReadingState) {
+                    inputstream.read(prolog, 0, 2);
                     size = prolog[1] * 256 + prolog[0];
-                    state = 1;
+                    state = valueReadingState;
                 } else {
-                    if (is.available() < size) continue;
-
-                    byte[] cmd = new byte[size];
-                    is.read(cmd, 0, size);
+                	
+                    byte[] incomingMessage = new byte[size];
+                    inputstream.read(incomingMessage, 0, size);
                     state = 0;
 
                     try {
-                        NxtMessage message = new NxtMessage(cmd);
+                        NxtMessage message = new NxtMessage(incomingMessage);
 
                         synchronized (this) {
                             queue.add(message);
                             logger.line(message.toString());
                         }
 
-                        if (message.getResponseNeeded())
-                            os.write(NxtMessage.RESPONSE_MSG);
+                        if (message.getResponseNeeded()) {
+                            outputstream.write(NxtMessage.RESPONSE_MSG);
+                        }
 
                     } catch (NxtMessage.UnknownMessage ignored) { }
                 }
             }
         } catch (IOException ignored) { }
     }
+
+	private boolean tooFewDataAvailable() throws IOException {
+		return inputstream.available() < 2;
+	}
+
+	private void sleepIfPossible() {
+		try {
+		    sleep(1);
+		} catch (java.lang.InterruptedException ignored) { }
+	}
 
     synchronized public void terminate() {
         terminated = true;

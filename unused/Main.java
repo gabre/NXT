@@ -15,11 +15,13 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package de.se;
+package unused;
 
-public class SimpleConsoleLogger extends Logger {
-    @Override
-    public void line(String s) {
-        System.out.println(s);
+
+public class Main {
+	public static String myBrick = "elteik";
+	
+    public static void main(String[] args) {
+    	new NxtConsole(new SimpleConsoleLogger()).start(myBrick);
     }
 }

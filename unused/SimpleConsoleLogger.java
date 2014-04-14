@@ -15,31 +15,13 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package de.se;
+package unused;
 
-public class NxtConsole {
-    private NxtBrick nxtBrick;
-    private Logger logger;
+import de.se.Logger;
 
-    public NxtConsole() {
-        logger = new SimpleConsoleLogger();
-        nxtBrick = new NxtBrick(logger);
-        logger.line("Started");
-    }
-
-    public void start(final String nxtName) {
-        new Thread() {
-            @Override
-            public void run() {
-                try {
-                    logger.line("Connecting...");
-                    nxtBrick.connect(nxtName);
-                    logger.line("Connected");
-                } catch (Exception e) {
-                    logger.line(e.getMessage());
-                    logger.line("Try again");
-                }
-            }
-        }.start();
+public class SimpleConsoleLogger extends Logger {
+    @Override
+    public void line(String s) {
+        System.out.println(s);
     }
 }
