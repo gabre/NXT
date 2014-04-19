@@ -18,7 +18,6 @@
 package unused;
 
 import de.se.Logger;
-import de.se.NxtBrick;
 
 public class NxtConsole {
     private NxtBrick nxtBrick;

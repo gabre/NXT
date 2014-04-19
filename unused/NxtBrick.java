@@ -15,18 +15,28 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package de.se;
+package unused;
 
 import javax.microedition.io.Connector;
+
+import java.util.Observable;
+
 import javax.microedition.io.StreamConnection;
+
+import de.se.Logger;
+import de.se.NxtBluetooth;
+import de.se.NxtMessage;
+import de.se.NxtBrickBluetoothThread;
+import de.se.NxtMessage.Type;
+
 import java.io.InputStream;
 import java.io.OutputStream;
 import java.util.List;
 
-public class NxtBrick {
-    private NxtReaderThread reader;
-    private StreamConnection con;
-    private OutputStream os;
+public class NxtBrick extends Observable {
+    private NxtBrickBluetoothThread reader;
+    private StreamConnection connection;
+    private OutputStream outputstream;
     private Logger logger;
 
     public NxtBrick(final Logger aLogger) {
@@ -47,13 +57,13 @@ public class NxtBrick {
         }
 
         try {
-            con = (StreamConnection) Connector.open(url);
+            connection = (StreamConnection) Connector.open(url);
 
-            os = con.openOutputStream();
-            InputStream is = con.openInputStream();
+            outputstream = connection.openOutputStream();
+            InputStream inputstream = connection.openInputStream();
 
-            reader = new NxtReaderThread(logger, is, os);
-            reader.start();
+            reader = null; //new NxtReaderThread(logger, inputstream, outputstream);
+            reader.run();
         } catch (java.io.IOException e) {
             logger.line(e.getMessage());
             throw new Exception("Connection failed to " + url);
@@ -63,26 +73,15 @@ public class NxtBrick {
     public void disconnect() {
         reader.terminate();
         reader = null;
-        con = null;
+        connection = null;
     }
 
-    public int avail() {
-        return reader.getInAvail();
-    }
-
-    public List<NxtMessage> messages() {
-        return reader.getMessages();
-    }
-    
-    public NxtMessage getOldestMessage() {
-        return reader.getFirstMessage();
-    }    
 
     public void send(int mailbox, String s) {
         NxtMessage msg = new NxtMessage(NxtMessage.Type.INCOMING, mailbox, s, false);
         try {
-            os.write(msg.pack());
-            os.flush();
+            outputstream.write(msg.pack());
+            outputstream.flush();
         } catch (java.io.IOException e) {
             logger.line(e.getMessage());
         }

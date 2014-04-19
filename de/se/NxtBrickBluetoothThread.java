@@ -22,39 +22,59 @@ import java.io.InputStream;
 import java.io.OutputStream;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.Observable;
 
-public class NxtReaderThread extends Thread {
+import javax.microedition.io.Connector;
+import javax.microedition.io.StreamConnection;
+
+public class NxtBrickBluetoothThread extends Observable implements Runnable  {
     private static final int sizeReadingState = 0;
 	private static final int valueReadingState = 1;
 	private InputStream inputstream;
     private OutputStream outputstream;
-    private List<NxtMessage> queue;
     private boolean terminated;
     private Logger logger;
+    private StreamConnection connection;
 
-    public NxtReaderThread(Logger aLogger, InputStream inputStream, OutputStream outputStream) {
-        inputstream = inputStream;
-        outputstream = outputStream;
-        logger = aLogger;
+    public NxtBrickBluetoothThread(Logger aLogger, String nxtName) throws Exception {
+    	logger = aLogger;
+        NxtBluetooth nxtBluetooth = new NxtBluetooth(logger);
+        String url;
+        try {
+            nxtBluetooth.find(nxtName);
+            url = nxtBluetooth.getURL();
+            logger.line(url);
+        } catch (java.io.IOException e) {
+            logger.line(e.getMessage());
+            throw new Exception("No NXT found");
+        }
+
+        try {
+            connection = (StreamConnection) Connector.open(url);
+            outputstream = connection.openOutputStream();
+            inputstream = connection.openInputStream();
+        } catch (java.io.IOException e) {
+            logger.line(e.getMessage());
+            throw new Exception("Connection failed to " + url);
+        }
+        
     }
 
-    public synchronized List<NxtMessage> getMessages() {
-        List<NxtMessage> messages = queue;
-        queue.clear();
-        return messages;
+    public void send(int mailbox, String s) {
+        NxtMessage msg = new NxtMessage(NxtMessage.Type.INCOMING, mailbox, s, false);
+        try {
+            outputstream.write(msg.pack());
+            outputstream.flush();
+        } catch (java.io.IOException e) {
+            logger.line(e.getMessage());
+        }
     }
     
-    public synchronized NxtMessage getFirstMessage() {
-        return queue.remove(0);
-    }
-
-    public synchronized int getInAvail() {
-        return queue.size();
+    synchronized public void terminate() {
+        terminated = true;
     }
 
     public void run() {
-        queue = new LinkedList<NxtMessage>();
-
         try {
             int state = 0;
             byte[] prolog = new byte[2];
@@ -79,7 +99,7 @@ public class NxtReaderThread extends Thread {
                         NxtMessage message = new NxtMessage(incomingMessage);
 
                         synchronized (this) {
-                            queue.add(message);
+                            notifyObservers(message);
                             logger.line(message.toString());
                         }
 
@@ -99,11 +119,7 @@ public class NxtReaderThread extends Thread {
 
 	private void sleepIfPossible() {
 		try {
-		    sleep(1);
+		    Thread.sleep(1);
 		} catch (java.lang.InterruptedException ignored) { }
 	}
-
-    synchronized public void terminate() {
-        terminated = true;
-    }
 }
