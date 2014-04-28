@@ -30,8 +30,8 @@
 #define NORMALIZATION_TRESHOLD				  100
 #define STARTING_MOTOR_ROTATION_COUNT			0
 
-#define BT_CONN 1
-#define MAILBOX 0
+#define BT_CONN 0
+#define MAILBOX 1
 #define REMOVE_MSG 1
 
 #define START_SYMBOL "START"
@@ -129,7 +129,7 @@ task main(){
   init_bluetooth();
   
   PlayTone(50, 2000);
-  while(!is_start_msg_received()) {}
+  while(!is_start_msg_received()) {PlayTone(50, 300); Wait(500);}
   PlayTone(50, 2000);
 
   while(INFINITY){

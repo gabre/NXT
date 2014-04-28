@@ -51,7 +51,7 @@ public class MainWindow extends Application {
 			@Override
 			public void handle(ActionEvent event) {
 				String msg = "START";
-				myNxt.send(0, msg);
+				myNxt.send(1, msg);
 			}
         });
         

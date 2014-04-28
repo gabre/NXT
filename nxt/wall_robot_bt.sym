@@ -1,545 +1,587 @@
 #SYMBOLS
 Index	Identifier	Type	Flag	Data	Size	RefCount
 0	__DU0is_wall_disappeared	5	1	0	4	2
-1	__D0is_wall_outer_edge_reached	6	1	4	4	6
-2	__D0is_wall_disappeared	6	1	8	4	4
-3	__D0is_steering_left_too_much	6	1	12	4	4
+1	__D0is_wall_outer_edge_reached	6	1	4	4	2
+2	__D0is_wall_disappeared	6	1	8	4	2
+3	__D0is_steering_left_too_much	6	1	12	4	2
 4	__DU0is_steering_left_too_much	5	1	16	4	2
 5	__DU0is_wall_outer_edge_reached	5	1	20	4	2
 6	__D0set_motors	6	1	24	4	4
-7	__D0steer_forward_or_take_inner_corner	6	1	28	4	10
-8	__D0normalizePower	6	1	32	4	13
-9	__D0main	6	1	36	4	17
+7	__D0steer_forward_or_take_inner_corner	6	1	28	4	6
+8	__D0normalizePower	6	1	32	4	11
+9	__D0main	6	1	36	4	14
 10	__DU0main	5	1	40	4	4
-11	__DU0is_steering_left_not_enough	5	1	44	4	2
-12	__DU0init_bluetooth	5	1	48	4	2
-13	__D0is_bigger_left_steer_needed	6	1	52	4	4
-14	__D0init_bluetooth	6	1	56	4	8
-15	__D0BTWait	6	1	60	4	10
-16	__D0calculate_suggested_steer_value	6	1	64	4	4
-17	__DU0is_bigger_left_steer_needed	5	1	68	4	6
-18	__DU0is_start_msg_received	5	1	72	4	3
-19	__D0is_steering_left_not_enough	6	1	76	4	4
-20	__D0is_start_msg_received	6	1	80	4	2
-21	__D0is_front_wall_too_close	6	1	84	4	4
-22	__DU0is_front_wall_too_close	5	1	88	4	2
-23	__DU0steer_forward_or_take_inner_corner	5	1	92	4	4
-24	__signed_stack_002is_wall_outer_edge_reached	6	1	96	4	2
-25	__signed_stack_001main	6	1	100	4	4
-26	__signed_stack_001is_wall_outer_edge_reached	6	1	104	4	2
+11	__DU0init_bluetooth	5	1	44	4	2
+12	__D0is_bigger_left_steer_needed	6	1	48	4	4
+13	__D0init_bluetooth	6	1	52	4	6
+14	__D0BTWait	6	1	56	4	6
+15	__D0calculate_suggested_steer_value	6	1	60	4	2
+16	__DU0is_bigger_left_steer_needed	5	1	64	4	6
+17	__D0is_steering_left_not_enough	6	1	68	4	2
+18	__DU0is_steering_left_not_enough	5	1	72	4	2
+19	__DU0is_start_msg_received	5	1	76	4	3
+20	__D0is_front_wall_too_close	6	1	80	4	2
+21	__DU0is_front_wall_too_close	5	1	84	4	2
+22	__DU0steer_forward_or_take_inner_corner	5	1	88	4	4
+23	__signed_stack_001is_wall_outer_edge_reached	6	1	92	4	2
+24	__signed_stack_001main	6	1	96	4	6
+25	__signed_stack_001is_wall_disappeared	6	1	100	4	2
+26	__signed_stack_001is_steering_left_not_enough	6	1	104	4	2
 27	__signed_stack_001is_steering_left_too_much	6	1	108	4	2
-28	__signed_stack_001is_wall_disappeared	6	1	112	4	2
-29	__signed_stack_002main	6	1	116	4	4
-30	__Wait_7qG2_ms_7qG2_000_inline_init_bluetooth	5	1	120	4	2
-31	__main_7qG2_last_rotation_count_when_wall_seen_7qG2_000	6	1	124	4	3
-32	__signed_stack_001set_motors	6	1	128	4	4
-33	__signed_stack_003main	6	1	132	4	4
-34	__signed_stack_001normalizePower	6	1	136	4	4
-35	__signed_stack_001is_steering_left_not_enough	6	1	140	4	2
-36	__DU0SetSensorLowspeed_inline_main	5	1	144	4	10
-37	__signed_stack_001BTCommCheck	6	1	148	4	2
-38	__D0SetSensorLowspeed_inline_main	6	1	152	4	4
-39	__D0steer_outer_corner	6	1	156	4	5
-40	__DU0steer_outer_corner	5	1	160	4	2
-41	__signed_stack_001BTWait	6	1	164	4	2
+28	__signed_stack_002main	6	1	112	4	6
+29	__main_7qG2_last_rotation_count_when_wall_seen_7qG2_000	6	1	116	4	3
+30	__Wait_7qG2_ms_7qG2_000_inline_main	5	1	120	4	2
+31	__Wait_7qG2_ms_7qG2_000_inline_init_bluetooth	5	1	124	4	2
+32	__signed_stack_003main	6	1	128	4	6
+33	__signed_stack_001normalizePower	6	1	132	4	4
+34	__DU0SetSensorLowspeed_inline_main	5	1	136	4	4
+35	__signed_stack_001BTCommCheck	6	1	140	4	2
+36	__D0SetSensorLowspeed_inline_main	6	1	144	4	6
+37	__D0steer_outer_corner	6	1	148	4	3
+38	__DU0steer_outer_corner	5	1	152	4	2
+39	__signed_stack_001BTWait	6	1	156	4	2
+40	__signed_stack_001is_bigger_left_steer_needed	6	1	160	4	2
+41	__signed_stack_001is_front_wall_too_close	6	1	164	4	2
 42	__signed_stack_003init_bluetooth	6	1	168	4	4
-43	__signed_stack_001is_front_wall_too_close	6	1	172	4	2
+43	__signed_stack_001init_bluetooth	6	1	172	4	4
 44	__signed_stack_002init_bluetooth	6	1	176	4	4
-45	__signed_stack_001calculate_suggested_steer_value	6	1	180	4	2
-46	__signed_stack_001init_bluetooth	6	1	184	4	4
-47	__CBTCSMutex	9	0	188	4	4
-48	__CLSWMutex0	9	0	192	4	2
-49	__RLSBmutex1	9	0	196	4	2
+45	__DU0BTCommCheck	5	1	180	4	3
+46	__CLSCSMutex0	9	0	184	4	2
+47	__RLSBmutex0	9	0	188	4	2
+48	__CLSRMutex0	9	0	192	4	2
+49	__CBTCSMutex	9	0	196	4	4
 50	__CLSWMutex1	9	0	200	4	2
-51	__CLSCSMutex0	9	0	204	4	2
-52	__CLSRMutex1	9	0	208	4	2
-53	__D0BTCommCheck	6	1	212	4	6
-54	__DU0BTCommCheck	5	1	216	4	3
-55	__CLSCSMutex1	9	0	220	4	2
-56	__CLSRMutex0	9	0	224	4	2
-57	__RLSBmutex0	9	0	228	4	2
-58	__SPTArgsMutex	9	0	232	4	8
-59	__is_bigger_left_steer_needed_7qG2_current_steer_7qG2_000	4	1	236	2	2
-60	__is_bigger_left_steer_needed_7qG2_us_front_value_7qG2_000	4	1	238	2	2
-61	__is_steering_left_not_enough_7qG2_current_steer_7qG2_000	4	1	240	2	2
-62	__is_front_wall_too_close_7qG2_frontal_us_sensor_value_7qG2_000	4	1	242	2	2
-63	__BTCommCheck_7qG2_connection_7qG2_000	4	1	244	2	2
-64	__BTWait_7qG2_connection_7qG2_000	4	1	246	2	3
-65	__normalizePower_7qG2_p_7qG2_000	4	1	248	2	5
-66	__is_wall_outer_edge_reached_7qG2_last_rotation_count_when_wall_seen_7qG2_000	4	1	250	2	2
-67	__is_steering_left_too_much_7qG2_current_steer_7qG2_000	4	1	252	2	2
-68	__is_wall_disappeared_7qG2_us_right_value_7qG2_000	4	1	254	2	2
-69	__steer_outer_corner_7qG2_last_rotation_count_when_wall_seen_7qG2_000	4	1	256	2	2
-70	__steer_forward_or_take_inner_corner_7qG2_current_steer_7qG2_000	4	1	258	2	4
-71	__main_7qG2_us_right_value_7qG2_000	4	1	260	2	2
-72	__set_motors_7qG2_robot_steer_7qG2_000	4	1	262	2	3
-73	__calculate_suggested_steer_value_7qG2_us_right_value_7qG2_000	4	1	264	2	2
-74	__main_7qG2_robot_steer_7qG2_000	4	1	266	2	5
-75	__SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_main	1	1	268	1	4
-76	__is_wall_outer_edge_reached_return	1	1	269	1	4
-77	__SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_main	1	1	270	1	4
-78	__is_wall_disappeared_return	1	1	271	1	4
-79	__steer_outer_corner_return	1	1	272	1	5
-80	__SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_main	1	1	273	1	4
-81	__is_start_msg_received_return	1	1	274	1	4
-82	__constVal0	2	1	275	1	13
-83	__init_bluetooth_return	1	1	276	1	3
-84	__ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_main	1	1	277	1	2
-85	__SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_main	1	1	278	1	4
-86	__normalizePower_return	1	1	279	1	7
-87	__SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_main	1	1	280	1	4
-88	__SetSensorLowspeed_7qG2_port_7qG2_000_inline_main	1	1	281	1	10
-89	__constValNeg90	2	0	282	1	2
-90	__is_steering_left_not_enough_return	1	1	283	1	4
-91	__set_motors_return	1	1	284	1	3
-92	__is_bigger_left_steer_needed_return	1	1	285	1	4
-93	__steer_forward_or_take_inner_corner_return	1	1	286	1	6
-94	__calculate_suggested_steer_value_return	1	1	287	1	4
-95	__is_front_wall_too_close_return	1	1	288	1	4
-96	__constValNeg120	2	0	289	1	2
-97	__is_steering_left_too_much_return	1	1	290	1	4
-98	__constVal32	2	0	291	1	6
-99	__constVal96	2	0	292	1	2
-100	__constVal63	2	0	293	1	2
-101	____initialize_global_data_return	1	1	294	1	3
-102	__BTReceiveMessage_return	1	1	295	1	4
-103	____ReadLSBytes1_return	1	1	296	1	3
-104	__RLSBIterations0	1	1	297	1	4
-105	__RLSBResult1	2	1	298	1	7
-106	____ResetSensorSubroutine_return	1	1	299	1	4
-107	__RLSBytesCount1	1	1	300	1	7
-108	__RLSBytesCount0	1	1	301	1	7
-109	__constValNeg100	2	0	302	1	2
-110	____ReadLSBytes0_return	1	1	303	1	3
-111	__LSWriteOptionsVar	1	1	304	1	4
-112	__RLSBResult0	2	1	305	1	7
-113	__PFTmp	1	1	306	1	1
-114	__ResetSensorTmp	1	1	307	1	2
-115	__RLSBIterations1	1	1	308	1	4
-116	__constVal15	2	0	309	1	2
-117	__BTReceiveMessage_7qG2_connection_7qG2_000	1	1	310	1	3
-118	__BTReceiveMessage_7qG2_flush_7qG2_000	1	1	311	1	2
-119	__BTReceiveMessage_7qG2_mailbox_7qG2_000	1	1	312	1	2
-120	__constVal3	2	0	313	1	2
-121	__ResetSensorPort	1	1	314	1	4
-122	__constVal1	2	0	315	1	10
-123	__BTWait_return	1	1	316	1	4
-124	__BTCommCheck_return	1	1	317	1	4
-125	__MRArgs	8	0	4	8	4
-126	__MRArgs.Result	2	1	320	1	4
-127	__MRArgs.QueueID	1	1	321	1	4
-128	__MRArgs.Remove	1	1	322	1	4
-129	__MRArgs.Message	7	0	324	4	4
-130	__MRArgs.Message.Message_type	1	0	0	1	0
-131	__CBTCSArgs	8	0	2	4	6
-132	__CBTCSArgs.Result	2	1	328	1	6
-133	__CBTCSArgs.Connection	1	1	329	1	6
-134	__CLSWArgs0	8	0	4	12	5
-135	__CLSWArgs0.Result	2	1	332	1	5
-136	__CLSWArgs0.Port	1	1	333	1	5
-137	__CLSWArgs0.Buffer	7	0	334	4	5
-138	__CLSWArgs0.Buffer.Buffer_type	1	0	0	1	0
-139	__CLSWArgs0.ReturnLen	1	1	336	1	5
+51	__CLSWMutex0	9	0	204	4	2
+52	__RLSBmutex1	9	0	208	4	2
+53	__D0BTCommCheck	6	1	212	4	4
+54	__CLSCSMutex1	9	0	216	4	2
+55	__CLSRMutex1	9	0	220	4	2
+56	__SPTArgsMutex	9	0	224	4	10
+57	__is_steering_left_not_enough_7qG2_current_steer_7qG2_000	4	1	228	2	2
+58	__set_motors_7qG2_robot_steer_7qG2_000	4	1	230	2	3
+59	__calculate_suggested_steer_value_7qG2_us_right_value_7qG2_000	4	1	232	2	2
+60	__is_bigger_left_steer_needed_7qG2_current_steer_7qG2_000	4	1	234	2	2
+61	__is_bigger_left_steer_needed_7qG2_us_front_value_7qG2_000	4	1	236	2	2
+62	__is_wall_outer_edge_reached_7qG2_last_rotation_count_when_wall_seen_7qG2_000	4	1	238	2	2
+63	__normalizePower_7qG2_p_7qG2_000	4	1	240	2	5
+64	__steer_forward_or_take_inner_corner_7qG2_current_steer_7qG2_000	4	1	242	2	4
+65	__is_steering_left_too_much_7qG2_current_steer_7qG2_000	4	1	244	2	2
+66	__steer_outer_corner_7qG2_last_rotation_count_when_wall_seen_7qG2_000	4	1	246	2	2
+67	__is_wall_disappeared_7qG2_us_right_value_7qG2_000	4	1	248	2	2
+68	__BTCommCheck_7qG2_connection_7qG2_000	4	1	250	2	2
+69	__BTWait_7qG2_connection_7qG2_000	4	1	252	2	3
+70	__main_7qG2_us_right_value_7qG2_000	4	1	254	2	2
+71	__is_front_wall_too_close_7qG2_frontal_us_sensor_value_7qG2_000	4	1	256	2	2
+72	__constVal360	4	0	258	2	1
+73	__main_7qG2_robot_steer_7qG2_000	4	1	260	2	5
+74	__is_wall_outer_edge_reached_return	1	1	262	1	4
+75	__steer_outer_corner_return	1	1	263	1	5
+76	__BTReceiveMessage_7qG2_mailbox_7qG2_000	1	1	264	1	2
+77	__BTReceiveMessage_7qG2_flush_7qG2_000	1	1	265	1	2
+78	__BTWait_return	1	1	266	1	4
+79	__BTReceiveMessage_7qG2_connection_7qG2_000	1	1	267	1	3
+80	__BTReceiveMessage_return	1	1	268	1	4
+81	__is_start_msg_received_return	1	1	269	1	4
+82	__normalizePower_return	1	1	270	1	7
+83	__init_bluetooth_return	1	1	271	1	3
+84	__constVal0	2	1	272	1	11
+85	__SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_main	1	1	273	1	4
+86	__SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_main	1	1	274	1	4
+87	__SetSensorLowspeed_7qG2_port_7qG2_000_inline_main	1	1	275	1	10
+88	____initialize_global_data_return	1	1	276	1	3
+89	__constVal1	2	0	277	1	6
+90	__SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_main	1	1	278	1	4
+91	__constVal32	2	0	279	1	6
+92	__constVal33	2	0	280	1	1
+93	__ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_main	1	1	281	1	2
+94	__SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_main	1	1	282	1	4
+95	__SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_main	1	1	283	1	4
+96	__constVal63	2	0	284	1	2
+97	__is_front_wall_too_close_return	1	1	285	1	4
+98	__is_steering_left_not_enough_return	1	1	286	1	4
+99	__constValNeg120	2	0	287	1	2
+100	__is_wall_disappeared_return	1	1	288	1	4
+101	__is_steering_left_too_much_return	1	1	289	1	4
+102	__constValNeg90	2	0	290	1	2
+103	__set_motors_return	1	1	291	1	3
+104	__constVal96	2	0	292	1	2
+105	__calculate_suggested_steer_value_return	1	1	293	1	4
+106	__is_bigger_left_steer_needed_return	1	1	294	1	4
+107	__steer_forward_or_take_inner_corner_return	1	1	295	1	6
+108	__BTCommCheck_return	1	1	296	1	4
+109	__zfis_wall_disappeared	1	1	297	1	2
+110	____ReadLSBytes1_return	1	1	298	1	3
+111	__RLSBResult1	2	1	299	1	7
+112	__RLSBytesCount1	1	1	300	1	7
+113	__zfis_steering_left_too_much	1	1	301	1	2
+114	__RLSBIterations0	1	1	302	1	4
+115	__zfnormalizePower	1	1	303	1	6
+116	__zfmain	1	1	304	1	6
+117	__zfis_wall_outer_edge_reached	1	1	305	1	2
+118	__constVal15	2	0	306	1	6
+119	__RLSBIterations1	1	1	307	1	4
+120	__zfinit_bluetooth	1	1	308	1	2
+121	__constVal20	2	0	309	1	2
+122	__PFTmp	1	1	310	1	1
+123	__zfBTCommCheck	1	1	311	1	2
+124	__zfBTWait	1	1	312	1	5
+125	__zfis_start_msg_received	1	1	313	1	2
+126	__zfis_steering_left_not_enough	1	1	314	1	2
+127	__zfis_front_wall_too_close	1	1	315	1	2
+128	__constValNeg100	2	0	316	1	2
+129	__zfis_bigger_left_steer_needed	1	1	317	1	5
+130	__zfsteer_outer_corner	1	1	318	1	2
+131	____ReadLSBytes0_return	1	1	319	1	3
+132	__ResetSensorTmp	1	1	320	1	2
+133	____ResetSensorSubroutine_return	1	1	321	1	4
+134	__zfSetSensorLowspeed_inline_main	1	1	322	1	4
+135	__constVal3	2	0	323	1	2
+136	__RLSBResult0	2	1	324	1	7
+137	__RLSBytesCount0	1	1	325	1	7
+138	__zfsteer_forward_or_take_inner_corner	1	1	326	1	4
+139	__ResetSensorPort	1	1	327	1	4
 140	__CLSRArgs0	8	0	4	12	5
-141	__CLSRArgs0.Result	2	1	340	1	5
-142	__CLSRArgs0.Port	1	1	341	1	5
-143	__CLSRArgs0.Buffer	7	0	342	4	5
+141	__CLSRArgs0.Result	2	1	328	1	5
+142	__CLSRArgs0.Port	1	1	329	1	5
+143	__CLSRArgs0.Buffer	7	0	330	4	5
 144	__CLSRArgs0.Buffer.Buffer_type	1	0	0	1	0
-145	__CLSRArgs0.BufferLen	1	1	344	1	5
-146	__SPTArgs	8	0	5	8	24
-147	__SPTArgs.Result	2	1	348	1	24
-148	__SPTArgs.Frequency	3	1	350	2	24
-149	__SPTArgs.Duration	3	1	352	2	24
-150	__SPTArgs.Loop	1	1	354	1	24
-151	__SPTArgs.Volume	1	1	355	1	24
-152	__CLSCSArgs0	8	0	3	4	4
-153	__CLSCSArgs0.Result	2	1	356	1	4
-154	__CLSCSArgs0.Port	1	1	357	1	4
-155	__CLSCSArgs0.BytesReady	1	1	358	1	4
-156	__CLSWArgs1	8	0	4	12	5
-157	__CLSWArgs1.Result	2	1	360	1	5
-158	__CLSWArgs1.Port	1	1	361	1	5
-159	__CLSWArgs1.Buffer	7	0	362	4	5
-160	__CLSWArgs1.Buffer.Buffer_type	1	0	0	1	0
-161	__CLSWArgs1.ReturnLen	1	1	364	1	5
-162	__CLSRArgs1	8	0	4	12	5
-163	__CLSRArgs1.Result	2	1	368	1	5
-164	__CLSRArgs1.Port	1	1	369	1	5
-165	__CLSRArgs1.Buffer	7	0	370	4	5
-166	__CLSRArgs1.Buffer.Buffer_type	1	0	0	1	0
-167	__CLSRArgs1.BufferLen	1	1	372	1	5
-168	__CLSCSArgs1	8	0	3	4	4
-169	__CLSCSArgs1.Result	2	1	376	1	4
-170	__CLSCSArgs1.Port	1	1	377	1	4
-171	__CLSCSArgs1.BytesReady	1	1	378	1	4
-172	__strbufBTReceiveMessage	7	0	380	4	2
-173	__strbufBTReceiveMessage.__strbufBTReceiveMessage_type	1	0	0	1	0
-174	__strretvalis_start_msg_received	7	0	382	4	2
-175	__strretvalis_start_msg_received.__strretvalis_start_msg_received_type	1	0	0	1	0
-176	__strtmpbufis_start_msg_received	7	0	384	4	2
-177	__strtmpbufis_start_msg_received.__strtmpbufis_start_msg_received_type	1	0	0	1	0
-178	__strbufis_start_msg_received	7	0	386	4	6
-179	__strbufis_start_msg_received.__strbufis_start_msg_received_type	1	0	0	1	0
-180	__constStr0009	7	0	388	4	1
-181	__constStr0009.__constStr0009_type	1	1	0	1	0
-182	__LSWriteOptions	7	0	390	4	2
-183	__LSWriteOptions.__LSWriteOptions_type	1	0	0	1	0
-184	__BTReceiveMessage_7qG2_msg_7qG2_000	7	0	392	4	2
-185	__BTReceiveMessage_7qG2_msg_7qG2_000.__BTReceiveMessage_7qG2_msg_7qG2_000_type	1	0	0	1	0
-186	__is_start_msg_received_7qG2_message_7qG2_000	7	0	394	4	2
-187	__is_start_msg_received_7qG2_message_7qG2_000.__is_start_msg_received_7qG2_message_7qG2_000_type	1	0	0	1	0
-188	__RLSBbufLSWrite1	7	0	396	4	2
-189	__RLSBbufLSWrite1.__RLSBbufLSWrite1_type	1	0	0	1	0
-190	__RLSLastGoodRead1	7	0	398	4	2
-191	__RLSLastGoodRead1.__RLSLastGoodRead1_type	1	0	0	1	0
-192	__RLSReadBuf1	7	0	400	4	8
-193	__RLSReadBuf1.__RLSReadBuf1_type	1	0	0	1	0
-194	__RLSLastGoodRead0	7	0	402	4	2
-195	__RLSLastGoodRead0.__RLSLastGoodRead0_type	1	0	0	1	0
-196	__RLSReadBuf0	7	0	404	4	8
-197	__RLSReadBuf0.__RLSReadBuf0_type	1	0	0	1	0
+145	__CLSRArgs0.BufferLen	1	1	332	1	5
+146	__CBTCSArgs	8	0	2	4	6
+147	__CBTCSArgs.Result	2	1	336	1	6
+148	__CBTCSArgs.Connection	1	1	337	1	6
+149	__CLSCSArgs1	8	0	3	4	4
+150	__CLSCSArgs1.Result	2	1	340	1	4
+151	__CLSCSArgs1.Port	1	1	341	1	4
+152	__CLSCSArgs1.BytesReady	1	1	342	1	4
+153	__SPTArgs	8	0	5	8	30
+154	__SPTArgs.Result	2	1	344	1	30
+155	__SPTArgs.Frequency	3	1	346	2	30
+156	__SPTArgs.Duration	3	1	348	2	30
+157	__SPTArgs.Loop	1	1	350	1	30
+158	__SPTArgs.Volume	1	1	351	1	30
+159	__CLSCSArgs0	8	0	3	4	4
+160	__CLSCSArgs0.Result	2	1	352	1	4
+161	__CLSCSArgs0.Port	1	1	353	1	4
+162	__CLSCSArgs0.BytesReady	1	1	354	1	4
+163	__CLSWArgs0	8	0	4	12	5
+164	__CLSWArgs0.Result	2	1	356	1	5
+165	__CLSWArgs0.Port	1	1	357	1	5
+166	__CLSWArgs0.Buffer	7	0	358	4	5
+167	__CLSWArgs0.Buffer.Buffer_type	1	0	0	1	0
+168	__CLSWArgs0.ReturnLen	1	1	360	1	5
+169	__MRArgs	8	0	4	8	4
+170	__MRArgs.Result	2	1	364	1	4
+171	__MRArgs.QueueID	1	1	365	1	4
+172	__MRArgs.Remove	1	1	366	1	4
+173	__MRArgs.Message	7	0	368	4	4
+174	__MRArgs.Message.Message_type	1	0	0	1	0
+175	__CLSWArgs1	8	0	4	12	5
+176	__CLSWArgs1.Result	2	1	372	1	5
+177	__CLSWArgs1.Port	1	1	373	1	5
+178	__CLSWArgs1.Buffer	7	0	374	4	5
+179	__CLSWArgs1.Buffer.Buffer_type	1	0	0	1	0
+180	__CLSWArgs1.ReturnLen	1	1	376	1	5
+181	__CLSRArgs1	8	0	4	12	5
+182	__CLSRArgs1.Result	2	1	380	1	5
+183	__CLSRArgs1.Port	1	1	381	1	5
+184	__CLSRArgs1.Buffer	7	0	382	4	5
+185	__CLSRArgs1.Buffer.Buffer_type	1	0	0	1	0
+186	__CLSRArgs1.BufferLen	1	1	384	1	5
+187	__RLSLastGoodRead1	7	0	386	4	2
+188	__RLSLastGoodRead1.__RLSLastGoodRead1_type	1	0	0	1	0
+189	__RLSLastGoodRead0	7	0	388	4	2
+190	__RLSLastGoodRead0.__RLSLastGoodRead0_type	1	0	0	1	0
+191	__strbufBTReceiveMessage	7	0	390	4	2
+192	__strbufBTReceiveMessage.__strbufBTReceiveMessage_type	1	0	0	1	0
+193	__RLSReadBuf0	7	0	392	4	8
+194	__RLSReadBuf0.__RLSReadBuf0_type	1	0	0	1	0
+195	__RLSBbufLSWrite1	7	0	394	4	2
+196	__RLSBbufLSWrite1.__RLSBbufLSWrite1_type	1	0	0	1	0
+197	__constStr0009	7	0	396	4	1
+198	__constStr0009.__constStr0009_type	1	1	0	1	0
+199	__strtmpbufis_start_msg_received	7	0	398	4	2
+200	__strtmpbufis_start_msg_received.__strtmpbufis_start_msg_received_type	1	0	0	1	0
+201	__strbufis_start_msg_received	7	0	400	4	6
+202	__strbufis_start_msg_received.__strbufis_start_msg_received_type	1	0	0	1	0
+203	__strretvalis_start_msg_received	7	0	402	4	2
+204	__strretvalis_start_msg_received.__strretvalis_start_msg_received_type	1	0	0	1	0
+205	__is_start_msg_received_7qG2_message_7qG2_000	7	0	404	4	2
+206	__is_start_msg_received_7qG2_message_7qG2_000.__is_start_msg_received_7qG2_message_7qG2_000_type	1	0	0	1	0
+207	__BTReceiveMessage_7qG2_msg_7qG2_000	7	0	406	4	2
+208	__BTReceiveMessage_7qG2_msg_7qG2_000.__BTReceiveMessage_7qG2_msg_7qG2_000_type	1	0	0	1	0
+209	__RLSReadBuf1	7	0	408	4	8
+210	__RLSReadBuf1.__RLSReadBuf1_type	1	0	0	1	0
 #SOURCES
 Clump	Line	PC	Source
 0	120	0	#line 120 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
 0	121	0		subcall __initialize_global_data, ____initialize_global_data_return
 0	120	2	#line 120 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-0	122	2	#line 122 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-0	123	2		set __main_7qG2_last_rotation_count_when_wall_seen_7qG2_000, 0
-0	122	5	#line 122 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+0	123	2	#line 123 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+0	124	2		set __main_7qG2_last_rotation_count_when_wall_seen_7qG2_000, 0
+0	123	5	#line 123 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
 0	125	5	#line 125 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
 0	126	5		set __SetSensorLowspeed_7qG2_port_7qG2_000_inline_main, 1
 0	125	8	#line 125 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-0	125	8	#line 125 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-0	126	8		mov __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_main, __constVal1
-0	4523	10	#line 4523 "NXCDefs.h"
-0	4524	10		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_main, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_main
-0	4523	12	#line 4523 "NXCDefs.h"
-0	4523	12	#line 4523 "NXCDefs.h"
-0	4524	12		mov __DU0SetSensorLowspeed_inline_main, __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_main
-0	4523	14	#line 4523 "NXCDefs.h"
-0	4524	14		tst 5, __D0SetSensorLowspeed_inline_main, __DU0SetSensorLowspeed_inline_main
-0	4523	17	#line 4523 "NXCDefs.h"
-0	4524	17		brtst 4, __004__ASM_Label_36, __D0SetSensorLowspeed_inline_main
-0	4523	20	#line 4523 "NXCDefs.h"
-0	4524	20		set __DU0SetSensorLowspeed_inline_main, 11
-0	4523	23	#line 4523 "NXCDefs.h"
-0	4523	23	#line 4523 "NXCDefs.h"
-0	4524	23		jmp __004__ASM_Label_37
-0	4523	25	#line 4523 "NXCDefs.h"
-0	4524	25		set __DU0SetSensorLowspeed_inline_main, 10
-0	4523	28	#line 4523 "NXCDefs.h"
-0	4523	28	#line 4523 "NXCDefs.h"
-0	4524	28		mov __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_main, __DU0SetSensorLowspeed_inline_main
-0	4428	30	#line 4428 "NXCDefs.h"
-0	4429	30		setin __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_main, __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_main, 0
-0	4428	34	#line 4428 "NXCDefs.h"
-0	4523	34	#line 4523 "NXCDefs.h"
-0	4524	34	#line 4524 "NXCDefs.h"
-0	4525	34		mov __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_main, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_main
-0	4524	36	#line 4524 "NXCDefs.h"
-0	4524	36	#line 4524 "NXCDefs.h"
-0	4525	36		set __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_main, 0
-0	4524	39	#line 4524 "NXCDefs.h"
-0	4441	39	#line 4441 "NXCDefs.h"
-0	4442	39		setin __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_main, __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_main, 1
-0	4441	43	#line 4441 "NXCDefs.h"
-0	4524	43	#line 4524 "NXCDefs.h"
-0	4525	43	#line 4525 "NXCDefs.h"
-0	4526	43		mov __ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_main, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_main
-0	4525	45	#line 4525 "NXCDefs.h"
-0	4459	45	#line 4459 "NXCDefs.h"
-0	4460	45	#pragma macro 4
-0	4460	45		mov __ResetSensorPort, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_main
-0	4460	47		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
-0	5638	49	#line 5638 "NXCDefs.h"
-0	4459	49	#line 4459 "NXCDefs.h"
-0	4525	49	#line 4525 "NXCDefs.h"
-0	125	49	#line 125 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-0	126	49	#line 126 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-0	127	49		set __SetSensorLowspeed_7qG2_port_7qG2_000_inline_main, 0
-0	126	52	#line 126 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-0	126	52	#line 126 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-0	127	52		mov __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_main, __constVal1
-0	4523	54	#line 4523 "NXCDefs.h"
-0	4524	54		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_main, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_main
-0	4523	56	#line 4523 "NXCDefs.h"
-0	4523	56	#line 4523 "NXCDefs.h"
-0	4524	56		mov __DU0SetSensorLowspeed_inline_main, __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_main
-0	4523	58	#line 4523 "NXCDefs.h"
-0	4524	58		tst 5, __D0SetSensorLowspeed_inline_main, __DU0SetSensorLowspeed_inline_main
-0	4523	61	#line 4523 "NXCDefs.h"
-0	4524	61		brtst 4, __005__ASM_Label_36, __D0SetSensorLowspeed_inline_main
-0	4523	64	#line 4523 "NXCDefs.h"
-0	4524	64		set __DU0SetSensorLowspeed_inline_main, 11
-0	4523	67	#line 4523 "NXCDefs.h"
-0	4523	67	#line 4523 "NXCDefs.h"
-0	4524	67		jmp __005__ASM_Label_37
-0	4523	69	#line 4523 "NXCDefs.h"
-0	4524	69		set __DU0SetSensorLowspeed_inline_main, 10
-0	4523	72	#line 4523 "NXCDefs.h"
-0	4523	72	#line 4523 "NXCDefs.h"
-0	4524	72		mov __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_main, __DU0SetSensorLowspeed_inline_main
-0	4428	74	#line 4428 "NXCDefs.h"
-0	4429	74		setin __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_main, __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_main, 0
-0	4428	78	#line 4428 "NXCDefs.h"
-0	4523	78	#line 4523 "NXCDefs.h"
-0	4524	78	#line 4524 "NXCDefs.h"
-0	4525	78		mov __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_main, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_main
-0	4524	80	#line 4524 "NXCDefs.h"
-0	4524	80	#line 4524 "NXCDefs.h"
-0	4525	80		set __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_main, 0
-0	4524	83	#line 4524 "NXCDefs.h"
-0	4441	83	#line 4441 "NXCDefs.h"
-0	4442	83		setin __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_main, __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_main, 1
-0	4441	87	#line 4441 "NXCDefs.h"
-0	4524	87	#line 4524 "NXCDefs.h"
-0	4525	87	#line 4525 "NXCDefs.h"
-0	4526	87		mov __ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_main, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_main
-0	4525	89	#line 4525 "NXCDefs.h"
-0	4459	89	#line 4459 "NXCDefs.h"
-0	4460	89	#pragma macro 4
-0	4460	89		mov __ResetSensorPort, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_main
-0	4460	91		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
-0	5701	93	#line 5701 "NXCDefs.h"
-0	4459	93	#line 4459 "NXCDefs.h"
-0	4525	93	#line 4525 "NXCDefs.h"
-0	126	93	#line 126 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-0	128	93	#line 128 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-0	129	93		subcall init_bluetooth, __init_bluetooth_return
+0	126	8	#line 126 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+0	127	8		mov __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_main, __constVal1
+0	3758	10	#line 3758 "NXCDefs.h"
+0	3759	10		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_main, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_main
+0	3758	12	#line 3758 "NXCDefs.h"
+0	3758	12	#line 3758 "NXCDefs.h"
+0	3759	12		mov __DU0SetSensorLowspeed_inline_main, __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_main
+0	3758	14	#line 3758 "NXCDefs.h"
+0	3759	14		tst 5, __zfSetSensorLowspeed_inline_main, __DU0SetSensorLowspeed_inline_main
+0	3758	17	#line 3758 "NXCDefs.h"
+0	3759	17		brtst 4, __004__NXC_Label_36, __zfSetSensorLowspeed_inline_main
+0	3758	20	#line 3758 "NXCDefs.h"
+0	3759	20		set __D0SetSensorLowspeed_inline_main, 11
+0	3758	23	#line 3758 "NXCDefs.h"
+0	3759	23		jmp __004__NXC_Label_37
+0	3758	25	#line 3758 "NXCDefs.h"
+0	3759	25		set __D0SetSensorLowspeed_inline_main, 10
+0	3758	28	#line 3758 "NXCDefs.h"
+0	3759	28		mov __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_main, __D0SetSensorLowspeed_inline_main
+0	3663	30	#line 3663 "NXCDefs.h"
+0	3664	30		setin __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_main, __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_main, 0
+0	3663	34	#line 3663 "NXCDefs.h"
+0	3759	34	#line 3759 "NXCDefs.h"
+0	3759	34	#line 3759 "NXCDefs.h"
+0	3760	34		mov __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_main, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_main
+0	3759	36	#line 3759 "NXCDefs.h"
+0	3759	36	#line 3759 "NXCDefs.h"
+0	3760	36		set __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_main, 0
+0	3759	39	#line 3759 "NXCDefs.h"
+0	3676	39	#line 3676 "NXCDefs.h"
+0	3677	39		setin __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_main, __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_main, 1
+0	3676	43	#line 3676 "NXCDefs.h"
+0	3760	43	#line 3760 "NXCDefs.h"
+0	3760	43	#line 3760 "NXCDefs.h"
+0	3761	43		mov __ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_main, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_main
+0	3760	45	#line 3760 "NXCDefs.h"
+0	3694	45	#line 3694 "NXCDefs.h"
+0	3695	45	#pragma macro 4
+0	3695	45		mov __ResetSensorPort, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_main
+0	3695	47		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+0	5523	50	#line 5523 "NXCDefs.h"
+0	3694	50	#line 3694 "NXCDefs.h"
+0	3761	50	#line 3761 "NXCDefs.h"
+0	126	50	#line 126 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+0	126	50	#line 126 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+0	127	50		set __SetSensorLowspeed_7qG2_port_7qG2_000_inline_main, 0
+0	126	53	#line 126 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+0	128	53	#line 128 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+0	129	53		mov __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_main, __constVal1
+0	3758	55	#line 3758 "NXCDefs.h"
+0	3759	55		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_main, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_main
+0	3758	57	#line 3758 "NXCDefs.h"
+0	3758	57	#line 3758 "NXCDefs.h"
+0	3759	57		mov __DU0SetSensorLowspeed_inline_main, __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_main
+0	3758	59	#line 3758 "NXCDefs.h"
+0	3759	59		tst 5, __zfSetSensorLowspeed_inline_main, __DU0SetSensorLowspeed_inline_main
+0	3758	62	#line 3758 "NXCDefs.h"
+0	3759	62		brtst 4, __005__NXC_Label_36, __zfSetSensorLowspeed_inline_main
+0	3758	65	#line 3758 "NXCDefs.h"
+0	3759	65		set __D0SetSensorLowspeed_inline_main, 11
+0	3758	68	#line 3758 "NXCDefs.h"
+0	3759	68		jmp __005__NXC_Label_37
+0	3758	70	#line 3758 "NXCDefs.h"
+0	3759	70		set __D0SetSensorLowspeed_inline_main, 10
+0	3758	73	#line 3758 "NXCDefs.h"
+0	3759	73		mov __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_main, __D0SetSensorLowspeed_inline_main
+0	3663	75	#line 3663 "NXCDefs.h"
+0	3664	75		setin __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_main, __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_main, 0
+0	3663	79	#line 3663 "NXCDefs.h"
+0	3759	79	#line 3759 "NXCDefs.h"
+0	3759	79	#line 3759 "NXCDefs.h"
+0	3760	79		mov __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_main, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_main
+0	3759	81	#line 3759 "NXCDefs.h"
+0	3759	81	#line 3759 "NXCDefs.h"
+0	3760	81		set __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_main, 0
+0	3759	84	#line 3759 "NXCDefs.h"
+0	3676	84	#line 3676 "NXCDefs.h"
+0	3677	84		setin __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_main, __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_main, 1
+0	3676	88	#line 3676 "NXCDefs.h"
+0	3760	88	#line 3760 "NXCDefs.h"
+0	3760	88	#line 3760 "NXCDefs.h"
+0	3761	88		mov __ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_main, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_main
+0	3760	90	#line 3760 "NXCDefs.h"
+0	3694	90	#line 3694 "NXCDefs.h"
+0	3695	90	#pragma macro 4
+0	3695	90		mov __ResetSensorPort, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_main
+0	3695	92		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+0	5590	95	#line 5590 "NXCDefs.h"
+0	3694	95	#line 3694 "NXCDefs.h"
+0	3761	95	#line 3761 "NXCDefs.h"
 0	128	95	#line 128 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
 0	130	95	#line 130 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-0	131	95		set __signed_stack_001main, 50
-0	130	98	#line 130 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-0	130	98	#line 130 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-0	131	98		set __signed_stack_002main, 2000
-0	130	101	#line 130 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-0	130	101	#line 130 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-0	131	101		set __signed_stack_003main, 4
-0	130	104	#line 130 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-0	130	104	#line 130 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-0	131	104		set __D0main, 0
-0	130	107	#line 130 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-0	131	107		acquire __SPTArgsMutex
-0	130	108	#line 130 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-0	131	108		mov __SPTArgs.Frequency, __signed_stack_001main
-0	130	110	#line 130 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-0	131	110		mov __SPTArgs.Duration, __signed_stack_002main
-0	130	112	#line 130 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-0	131	112		mov __SPTArgs.Volume, __signed_stack_003main
-0	130	114	#line 130 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-0	131	114		mov __SPTArgs.Loop, __D0main
-0	130	117	#line 130 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-0	131	117		syscall 10, __SPTArgs
-0	130	120	#line 130 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-0	131	120		mov __D0main, __SPTArgs.Result
-0	130	123	#line 130 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-0	131	123		release __SPTArgsMutex
-0	130	124	#line 130 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+0	131	95		subcall init_bluetooth, __init_bluetooth_return
+0	130	97	#line 130 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+0	130	97	#line 130 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+0	131	97		set __signed_stack_001main, 50
+0	130	100	#line 130 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+0	130	100	#line 130 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+0	131	100		set __signed_stack_002main, 2000
+0	130	103	#line 130 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+0	130	103	#line 130 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+0	131	103		set __signed_stack_003main, 4
+0	130	106	#line 130 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+0	130	106	#line 130 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+0	131	106		set __D0main, 0
+0	131	109	#line 131 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+0	132	109		acquire __SPTArgsMutex
+0	131	110	#line 131 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+0	132	110		mov __SPTArgs.Frequency, __signed_stack_001main
+0	131	113	#line 131 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+0	132	113		mov __SPTArgs.Duration, __signed_stack_002main
+0	131	116	#line 131 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+0	132	116		mov __SPTArgs.Volume, __signed_stack_003main
+0	131	118	#line 131 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+0	132	118		mov __SPTArgs.Loop, __D0main
+0	131	121	#line 131 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+0	132	121		syscall 10, __SPTArgs
 0	131	124	#line 131 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-0	132	124		subcall is_start_msg_received, __is_start_msg_received_return
-0	131	126	#line 131 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-0	131	126	#line 131 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-0	132	126		not __DU0main, __DU0is_start_msg_received
-0	131	129	#line 131 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-0	132	129		tst 5, __D0main, __DU0main
-0	131	132	#line 131 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-0	132	132		brtst 4, __ASM_Label_738, __D0main
-0	132	135	#line 132 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-0	133	135		jmp __ASM_Label_737
-0	132	137	#line 132 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-0	132	137	#line 132 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-0	133	137		set __signed_stack_001main, 50
-0	132	140	#line 132 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-0	132	140	#line 132 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-0	133	140		set __signed_stack_002main, 2000
-0	132	143	#line 132 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-0	132	143	#line 132 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-0	133	143		set __signed_stack_003main, 4
-0	132	146	#line 132 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-0	132	146	#line 132 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-0	133	146		set __D0main, 0
-0	132	149	#line 132 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-0	133	149		acquire __SPTArgsMutex
-0	132	150	#line 132 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-0	133	150		mov __SPTArgs.Frequency, __signed_stack_001main
-0	132	152	#line 132 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-0	133	152		mov __SPTArgs.Duration, __signed_stack_002main
-0	132	154	#line 132 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-0	133	154		mov __SPTArgs.Volume, __signed_stack_003main
-0	132	156	#line 132 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-0	133	156		mov __SPTArgs.Loop, __D0main
-0	132	159	#line 132 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-0	133	159		syscall 10, __SPTArgs
-0	132	162	#line 132 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-0	133	162		mov __D0main, __SPTArgs.Result
-0	132	165	#line 132 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-0	133	165		release __SPTArgsMutex
-0	132	166	#line 132 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-0	134	166	#line 134 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-0	135	166		set __D0main, 1
-0	135	169	#line 135 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-0	136	169		tst 5, __D0main, __D0main
-0	135	172	#line 135 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-0	136	172		brtst 4, __ASM_Label_750, __D0main
-0	135	175	#line 135 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-0	136	175	#pragma macro 26
-0	136	175		acquire __RLSBmutex0
-0	136	176		mov __RLSReadBuf0, __RLSBbufLSWrite1
-0	136	178		set __RLSBytesCount0, 1
-0	136	181		wait2 NA, __constVal15
-0	136	184		subcall __ReadLSBytes0, ____ReadLSBytes0_return
-0	136	186		index __D0main, __RLSReadBuf0, 65535
-0	136	190		release __RLSBmutex0
-0	5807	191	#line 5807 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-0	135	191	#line 135 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-0	136	191		mov __main_7qG2_us_right_value_7qG2_000, __D0main
-0	135	193	#line 135 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-0	135	193	#line 135 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-0	136	193	#line 136 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-0	136	193	#line 136 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-0	137	193		mov __calculate_suggested_steer_value_7qG2_us_right_value_7qG2_000, __D0main
-0	136	195	#line 136 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-0	137	195		subcall calculate_suggested_steer_value, __calculate_suggested_steer_value_return
-0	136	197	#line 136 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-0	137	197		mov __main_7qG2_robot_steer_7qG2_000, __D0calculate_suggested_steer_value
-0	136	199	#line 136 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-0	136	199	#line 136 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-0	138	199	#line 138 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-0	139	199		mov __is_wall_disappeared_7qG2_us_right_value_7qG2_000, __main_7qG2_us_right_value_7qG2_000
-0	138	201	#line 138 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-0	138	201	#line 138 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-0	139	201		subcall is_wall_disappeared, __is_wall_disappeared_return
-0	138	203	#line 138 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-0	139	203		mov __DU0main, __DU0is_wall_disappeared
-0	139	205	#line 139 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-0	140	205		tst 5, __D0main, __DU0main
-0	139	208	#line 139 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-0	140	208		brtst 4, __ASM_Label_763, __D0main
-0	139	211	#line 139 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-0	140	211		mov __steer_outer_corner_7qG2_last_rotation_count_when_wall_seen_7qG2_000, __main_7qG2_last_rotation_count_when_wall_seen_7qG2_000
-0	139	213	#line 139 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-0	139	213	#line 139 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-0	140	213		subcall steer_outer_corner, __steer_outer_corner_return
-0	139	215	#line 139 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-0	140	215		mov __main_7qG2_robot_steer_7qG2_000, __D0steer_outer_corner
-0	139	217	#line 139 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-0	139	217	#line 139 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-0	141	217	#line 141 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-0	142	217		jmp __ASM_Label_768
-0	141	219	#line 141 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-0	142	219		getout __main_7qG2_last_rotation_count_when_wall_seen_7qG2_000, __constVal0, 14
-0	141	223	#line 141 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-0	141	223	#line 141 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-0	142	223	#line 142 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-0	143	223		mov __steer_forward_or_take_inner_corner_7qG2_current_steer_7qG2_000, __main_7qG2_robot_steer_7qG2_000
-0	142	225	#line 142 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-0	142	225	#line 142 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-0	143	225		subcall steer_forward_or_take_inner_corner, __steer_forward_or_take_inner_corner_return
-0	142	227	#line 142 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-0	143	227		mov __main_7qG2_robot_steer_7qG2_000, __D0steer_forward_or_take_inner_corner
-0	142	229	#line 142 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-0	142	229	#line 142 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-0	145	229	#line 145 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-0	145	229	#line 145 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-0	146	229		mov __set_motors_7qG2_robot_steer_7qG2_000, __main_7qG2_robot_steer_7qG2_000
-0	145	231	#line 145 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-0	145	231	#line 145 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-0	146	231		subcall set_motors, __set_motors_return
-0	145	233	#line 145 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-0	149	233	#line 149 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-0	150	233		jmp __ASM_Label_749
-0	149	235	#line 149 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-0	150	235		exit -1, -1
-1	5724	0		setin __constVal1, __ResetSensorPort, 5
-1	5726	4		getin __ResetSensorTmp, __ResetSensorPort, 5
-1	5727	8		brtst 5, __SensorStillInvalid, __ResetSensorTmp
-1	5728	11		subret ____ResetSensorSubroutine_return
-2	6520	0	#pragma macro 27
-2	6520	0		acquire __CLSWMutex0
-2	6520	1		index __LSWriteOptionsVar, __LSWriteOptions, __constVal0
-2	6520	5		or __CLSWArgs0.Port, __constVal0, __LSWriteOptionsVar
-2	6520	9		mov __CLSWArgs0.ReturnLen, __RLSBytesCount0
-2	6520	11		mov __CLSWArgs0.Buffer, __RLSReadBuf0
-2	6520	13		syscall 21, __CLSWArgs0
-2	6520	16		mov __RLSBResult0, __CLSWArgs0.Result
-2	6520	18		release __CLSWMutex0
-2	6521	19	#line 6521 "NXTDefs.h"
-2	6522	19		brtst 5, __RLSBError0, __RLSBResult0
-2	6523	22		set __RLSBIterations0, 60
-2	6525	25	#pragma macro 23
-2	6525	25		acquire __CLSCSMutex0
-2	6525	26		set __CLSCSArgs0.Port, 0
-2	6525	29		syscall 23, __CLSCSArgs0
-2	6525	32		mov __RLSBytesCount0, __CLSCSArgs0.BytesReady
-2	6525	34		mov __RLSBResult0, __CLSCSArgs0.Result
-2	6525	36		release __CLSCSMutex0
-2	6525	37	#line 6525 "NXTDefs.h"
-2	6526	37		sub __RLSBIterations0, __RLSBIterations0, __constVal1
-2	6527	41		brtst 2, __RLSBError0, __RLSBIterations0
-2	6528	44		brtst 0, __RLSBError0, __RLSBResult0
-2	6529	47		brtst 4, __RLSBReadyToRead0, __RLSBResult0
-2	6531	50		wait2 NA, __constVal1
-2	6532	53		jmp __RLSBDoCheckStatus0
-2	6534	55		brtst 4, __RLSBReturn0, __RLSBytesCount0
-2	6535	58		arrinit __RLSReadBuf0, __constVal0, __RLSBytesCount0
-2	6537	62	#pragma macro 25
-2	6537	62		acquire __CLSRMutex0
-2	6537	63		set __CLSRArgs0.Port, 0
-2	6537	66		mov __CLSRArgs0.BufferLen, __RLSBytesCount0
-2	6537	68		syscall 22, __CLSRArgs0
-2	6537	71		mov __RLSReadBuf0, __CLSRArgs0.Buffer
-2	6537	73		mov __RLSBResult0, __CLSRArgs0.Result
-2	6537	75		release __CLSRMutex0
-2	6537	76	#line 6537 "NXTDefs.h"
-2	6538	76		brtst 5, __RLSBError0, __RLSBResult0
-2	6539	79		mov __RLSLastGoodRead0, __RLSReadBuf0
-2	6540	81		jmp __RLSBDone0
-2	6542	83		mov __RLSReadBuf0, __RLSLastGoodRead0
-2	6544	85		arrsize __RLSBytesCount0, __RLSReadBuf0
-2	6546	88		subret ____ReadLSBytes0_return
-3	6558	0	#pragma macro 27
-3	6558	0		acquire __CLSWMutex1
-3	6558	1		index __LSWriteOptionsVar, __LSWriteOptions, __constVal1
-3	6558	5		or __CLSWArgs1.Port, __constVal1, __LSWriteOptionsVar
-3	6558	9		mov __CLSWArgs1.ReturnLen, __RLSBytesCount1
-3	6558	11		mov __CLSWArgs1.Buffer, __RLSReadBuf1
-3	6558	13		syscall 21, __CLSWArgs1
-3	6558	16		mov __RLSBResult1, __CLSWArgs1.Result
-3	6558	18		release __CLSWMutex1
-3	6558	19	#line 6558 "NXTDefs.h"
-3	6559	19		brtst 5, __RLSBError1, __RLSBResult1
-3	6560	22		set __RLSBIterations1, 60
-3	6562	25	#pragma macro 23
-3	6562	25		acquire __CLSCSMutex1
-3	6562	26		set __CLSCSArgs1.Port, 1
-3	6562	29		syscall 23, __CLSCSArgs1
-3	6562	32		mov __RLSBytesCount1, __CLSCSArgs1.BytesReady
-3	6562	34		mov __RLSBResult1, __CLSCSArgs1.Result
-3	6562	36		release __CLSCSMutex1
-3	6562	37	#line 6562 "NXTDefs.h"
-3	6563	37		sub __RLSBIterations1, __RLSBIterations1, __constVal1
-3	6564	41		brtst 2, __RLSBError1, __RLSBIterations1
-3	6565	44		brtst 0, __RLSBError1, __RLSBResult1
-3	6566	47		brtst 4, __RLSBReadyToRead1, __RLSBResult1
-3	6568	50		wait2 NA, __constVal1
-3	6569	53		jmp __RLSBDoCheckStatus1
-3	6571	55		brtst 4, __RLSBReturn1, __RLSBytesCount1
-3	6572	58		arrinit __RLSReadBuf1, __constVal0, __RLSBytesCount1
-3	6574	62	#pragma macro 25
-3	6574	62		acquire __CLSRMutex1
-3	6574	63		set __CLSRArgs1.Port, 1
-3	6574	66		mov __CLSRArgs1.BufferLen, __RLSBytesCount1
-3	6574	68		syscall 22, __CLSRArgs1
-3	6574	71		mov __RLSReadBuf1, __CLSRArgs1.Buffer
-3	6574	73		mov __RLSBResult1, __CLSRArgs1.Result
-3	6574	75		release __CLSRMutex1
-3	6574	76	#line 6574 "NXTDefs.h"
-3	6575	76		brtst 5, __RLSBError1, __RLSBResult1
-3	6576	79		mov __RLSLastGoodRead1, __RLSReadBuf1
-3	6577	81		jmp __RLSBDone1
-3	6579	83		mov __RLSReadBuf1, __RLSLastGoodRead1
-3	6581	85		arrsize __RLSBytesCount1, __RLSReadBuf1
-3	6583	88		subret ____ReadLSBytes1_return
+0	132	124		mov __D0main, __SPTArgs.Result
+0	131	127	#line 131 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+0	132	127		release __SPTArgsMutex
+0	131	128	#line 131 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+0	131	128	#line 131 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+0	132	128		subcall is_start_msg_received, __is_start_msg_received_return
+0	131	130	#line 131 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+0	131	130	#line 131 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+0	132	130		not __DU0main, __DU0is_start_msg_received
+0	131	133	#line 131 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+0	132	133		tst 5, __zfmain, __DU0main
+0	131	136	#line 131 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+0	132	136		brtst 4, __NXC_Label_669, __zfmain
+0	131	139	#line 131 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+0	132	139		set __signed_stack_001main, 50
+0	131	142	#line 131 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+0	131	142	#line 131 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+0	132	142		set __signed_stack_002main, 300
+0	131	145	#line 131 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+0	131	145	#line 131 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+0	132	145		set __signed_stack_003main, 4
+0	131	148	#line 131 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+0	131	148	#line 131 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+0	132	148		set __D0main, 0
+0	131	151	#line 131 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+0	132	151		acquire __SPTArgsMutex
+0	131	152	#line 131 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+0	132	152		mov __SPTArgs.Frequency, __signed_stack_001main
+0	131	155	#line 131 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+0	132	155		mov __SPTArgs.Duration, __signed_stack_002main
+0	131	158	#line 131 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+0	132	158		mov __SPTArgs.Volume, __signed_stack_003main
+0	131	160	#line 131 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+0	132	160		mov __SPTArgs.Loop, __D0main
+0	131	163	#line 131 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+0	132	163		syscall 10, __SPTArgs
+0	131	166	#line 131 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+0	132	166		mov __D0main, __SPTArgs.Result
+0	131	169	#line 131 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+0	132	169		release __SPTArgsMutex
+0	131	170	#line 131 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+0	131	170	#line 131 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+0	132	170		set __Wait_7qG2_ms_7qG2_000_inline_main, 500
+0	131	173	#line 131 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+0	7921	173	#line 7921 "NXCDefs.h"
+0	7922	173		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_main
+0	7921	176	#line 7921 "NXCDefs.h"
+0	131	176	#line 131 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+0	132	176	#line 132 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+0	133	176		jmp __NXC_Label_668
+0	132	178	#line 132 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+0	132	178	#line 132 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+0	133	178		set __signed_stack_001main, 50
+0	132	181	#line 132 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+0	132	181	#line 132 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+0	133	181		set __signed_stack_002main, 2000
+0	132	184	#line 132 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+0	132	184	#line 132 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+0	133	184		set __signed_stack_003main, 4
+0	132	187	#line 132 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+0	132	187	#line 132 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+0	133	187		set __D0main, 0
+0	134	190	#line 134 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+0	135	190		acquire __SPTArgsMutex
+0	134	191	#line 134 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+0	135	191		mov __SPTArgs.Frequency, __signed_stack_001main
+0	134	194	#line 134 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+0	135	194		mov __SPTArgs.Duration, __signed_stack_002main
+0	134	197	#line 134 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+0	135	197		mov __SPTArgs.Volume, __signed_stack_003main
+0	134	199	#line 134 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+0	135	199		mov __SPTArgs.Loop, __D0main
+0	134	202	#line 134 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+0	135	202		syscall 10, __SPTArgs
+0	134	205	#line 134 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+0	135	205		mov __D0main, __SPTArgs.Result
+0	134	208	#line 134 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+0	135	208		release __SPTArgsMutex
+0	134	209	#line 134 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+0	134	209	#line 134 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+0	135	209		set __D0main, 1
+0	135	212	#line 135 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+0	136	212		tst 5, __zfmain, __D0main
+0	135	215	#line 135 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+0	136	215		brtst 4, __NXC_Label_691, __zfmain
+0	135	218	#line 135 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+0	136	218	#pragma macro 26
+0	136	218		acquire __RLSBmutex0
+0	136	219		mov __RLSReadBuf0, __RLSBbufLSWrite1
+0	136	221		set __RLSBytesCount0, 1
+0	136	224		wait2 NA, __constVal15
+0	136	227		subcall __ReadLSBytes0, ____ReadLSBytes0_return
+0	136	230		index __D0main, __RLSReadBuf0, 65535
+0	136	234		release __RLSBmutex0
+0	5755	235	#line 5755 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+0	135	235	#line 135 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+0	136	235		mov __main_7qG2_us_right_value_7qG2_000, __D0main
+0	135	237	#line 135 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+0	135	237	#line 135 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+0	136	237	#line 136 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+0	137	237		mov __calculate_suggested_steer_value_7qG2_us_right_value_7qG2_000, __D0main
+0	136	239	#line 136 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+0	138	239	#line 138 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+0	139	239		subcall calculate_suggested_steer_value, __calculate_suggested_steer_value_return
+0	138	241	#line 138 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+0	139	241		mov __main_7qG2_robot_steer_7qG2_000, __D0calculate_suggested_steer_value
+0	138	243	#line 138 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+0	138	243	#line 138 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+0	138	243	#line 138 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+0	139	243		mov __is_wall_disappeared_7qG2_us_right_value_7qG2_000, __main_7qG2_us_right_value_7qG2_000
+0	138	245	#line 138 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+0	138	245	#line 138 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+0	139	245		subcall is_wall_disappeared, __is_wall_disappeared_return
+0	138	247	#line 138 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+0	139	247		mov __DU0main, __DU0is_wall_disappeared
+0	139	249	#line 139 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+0	140	249		tst 5, __zfmain, __DU0main
+0	139	252	#line 139 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+0	140	252		brtst 4, __NXC_Label_704, __zfmain
+0	139	255	#line 139 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+0	140	255		mov __steer_outer_corner_7qG2_last_rotation_count_when_wall_seen_7qG2_000, __main_7qG2_last_rotation_count_when_wall_seen_7qG2_000
+0	139	257	#line 139 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+0	140	257	#line 140 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+0	141	257		subcall steer_outer_corner, __steer_outer_corner_return
+0	140	259	#line 140 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+0	141	259		mov __main_7qG2_robot_steer_7qG2_000, __D0steer_outer_corner
+0	140	261	#line 140 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+0	140	261	#line 140 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+0	141	261	#line 141 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+0	142	261		jmp __NXC_Label_709
+0	142	263	#line 142 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+0	143	263		getout __main_7qG2_last_rotation_count_when_wall_seen_7qG2_000, __constVal0, 14
+0	142	267	#line 142 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+0	142	267	#line 142 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+0	142	267	#line 142 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+0	143	267		mov __steer_forward_or_take_inner_corner_7qG2_current_steer_7qG2_000, __main_7qG2_robot_steer_7qG2_000
+0	142	269	#line 142 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+0	143	269	#line 143 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+0	144	269		subcall steer_forward_or_take_inner_corner, __steer_forward_or_take_inner_corner_return
+0	143	271	#line 143 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+0	144	271		mov __main_7qG2_robot_steer_7qG2_000, __D0steer_forward_or_take_inner_corner
+0	143	273	#line 143 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+0	143	273	#line 143 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+0	145	273	#line 145 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+0	145	273	#line 145 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+0	146	273		mov __set_motors_7qG2_robot_steer_7qG2_000, __main_7qG2_robot_steer_7qG2_000
+0	145	275	#line 145 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+0	146	275	#line 146 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+0	147	275		subcall set_motors, __set_motors_return
+0	146	277	#line 146 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+0	149	277	#line 149 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+0	150	277		jmp __NXC_Label_690
+0	149	279	#line 149 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+0	150	279		exit -1, -1
+1	4885	0		setin __constVal1, __ResetSensorPort, 5
+1	4887	4		getin __ResetSensorTmp, __ResetSensorPort, 5
+1	4888	8		brtst 5, __SensorStillInvalid, __ResetSensorTmp
+1	4889	11		subret ____ResetSensorSubroutine_return
+2	5672	0	#pragma macro 25
+2	5672	0		acquire __CLSWMutex0
+2	5672	1		set __CLSWArgs0.Port, 0
+2	5672	4		mov __CLSWArgs0.ReturnLen, __RLSBytesCount0
+2	5672	6		mov __CLSWArgs0.Buffer, __RLSReadBuf0
+2	5672	8		syscall 21, __CLSWArgs0
+2	5672	11		mov __RLSBResult0, __CLSWArgs0.Result
+2	5672	13		release __CLSWMutex0
+2	5673	14	#line 5673 "NXTDefs.h"
+2	5674	14		brtst 4, __RLSBReturn0, __RLSBytesCount0
+2	5675	17		arrinit __RLSReadBuf0, __constVal0, __RLSBytesCount0
+2	5676	21		brtst 5, __RLSBError0, __RLSBResult0
+2	5677	24		set __RLSBIterations0, 4
+2	5679	27	#pragma macro 23
+2	5679	27		acquire __CLSCSMutex0
+2	5679	28		set __CLSCSArgs0.Port, 0
+2	5679	31		syscall 23, __CLSCSArgs0
+2	5679	34		mov __RLSBytesCount0, __CLSCSArgs0.BytesReady
+2	5679	36		mov __RLSBResult0, __CLSCSArgs0.Result
+2	5679	38		release __CLSCSMutex0
+2	5679	39	#line 5679 "NXTDefs.h"
+2	5680	39		sub __RLSBIterations0, __RLSBIterations0, __constVal1
+2	5681	43		brtst 2, __RLSBError0, __RLSBIterations0
+2	5682	46		brtst 0, __RLSBError0, __RLSBResult0
+2	5683	49		brtst 4, __RLSBReadyToRead0, __RLSBResult0
+2	5685	52		wait2 NA, __constVal15
+2	5686	55		jmp __RLSBDoCheckStatus0
+2	5689	57	#pragma macro 25
+2	5689	57		acquire __CLSRMutex0
+2	5689	58		set __CLSRArgs0.Port, 0
+2	5689	61		mov __CLSRArgs0.BufferLen, __RLSBytesCount0
+2	5689	63		syscall 22, __CLSRArgs0
+2	5689	66		mov __RLSReadBuf0, __CLSRArgs0.Buffer
+2	5689	68		mov __RLSBResult0, __CLSRArgs0.Result
+2	5689	70		release __CLSRMutex0
+2	5689	71	#line 5689 "NXTDefs.h"
+2	5690	71		brtst 5, __RLSBError0, __RLSBResult0
+2	5691	74		mov __RLSLastGoodRead0, __RLSReadBuf0
+2	5692	76		jmp __RLSBDone0
+2	5694	78		mov __RLSReadBuf0, __RLSLastGoodRead0
+2	5696	80		arrsize __RLSBytesCount0, __RLSReadBuf0
+2	5698	83		subret ____ReadLSBytes0_return
+3	5710	0	#pragma macro 25
+3	5710	0		acquire __CLSWMutex1
+3	5710	1		set __CLSWArgs1.Port, 1
+3	5710	4		mov __CLSWArgs1.ReturnLen, __RLSBytesCount1
+3	5710	6		mov __CLSWArgs1.Buffer, __RLSReadBuf1
+3	5710	8		syscall 21, __CLSWArgs1
+3	5710	11		mov __RLSBResult1, __CLSWArgs1.Result
+3	5710	13		release __CLSWMutex1
+3	5710	14	#line 5710 "NXTDefs.h"
+3	5711	14		brtst 4, __RLSBReturn1, __RLSBytesCount1
+3	5712	17		arrinit __RLSReadBuf1, __constVal0, __RLSBytesCount1
+3	5713	21		brtst 5, __RLSBError1, __RLSBResult1
+3	5714	24		set __RLSBIterations1, 4
+3	5716	27	#pragma macro 23
+3	5716	27		acquire __CLSCSMutex1
+3	5716	28		set __CLSCSArgs1.Port, 1
+3	5716	31		syscall 23, __CLSCSArgs1
+3	5716	34		mov __RLSBytesCount1, __CLSCSArgs1.BytesReady
+3	5716	36		mov __RLSBResult1, __CLSCSArgs1.Result
+3	5716	38		release __CLSCSMutex1
+3	5716	39	#line 5716 "NXTDefs.h"
+3	5717	39		sub __RLSBIterations1, __RLSBIterations1, __constVal1
+3	5718	43		brtst 2, __RLSBError1, __RLSBIterations1
+3	5719	46		brtst 0, __RLSBError1, __RLSBResult1
+3	5720	49		brtst 4, __RLSBReadyToRead1, __RLSBResult1
+3	5722	52		wait2 NA, __constVal15
+3	5723	55		jmp __RLSBDoCheckStatus1
+3	5726	57	#pragma macro 25
+3	5726	57		acquire __CLSRMutex1
+3	5726	58		set __CLSRArgs1.Port, 1
+3	5726	61		mov __CLSRArgs1.BufferLen, __RLSBytesCount1
+3	5726	63		syscall 22, __CLSRArgs1
+3	5726	66		mov __RLSReadBuf1, __CLSRArgs1.Buffer
+3	5726	68		mov __RLSBResult1, __CLSRArgs1.Result
+3	5726	70		release __CLSRMutex1
+3	5726	71	#line 5726 "NXTDefs.h"
+3	5727	71		brtst 5, __RLSBError1, __RLSBResult1
+3	5728	74		mov __RLSLastGoodRead1, __RLSReadBuf1
+3	5729	76		jmp __RLSBDone1
+3	5731	78		mov __RLSReadBuf1, __RLSLastGoodRead1
+3	5733	80		arrsize __RLSBytesCount1, __RLSReadBuf1
+3	5735	83		subret ____ReadLSBytes1_return
 4	16	0	#line 16 "C:\Users\gabre\Documents\GitHub\NXT\nxt\.\btio.nxc"
 4	17	0	#pragma macro 5
 4	17	0		acquire __CBTCSMutex
@@ -547,19 +589,20 @@ Clump	Line	PC	Source
 4	17	3		syscall 28, __CBTCSArgs
 4	17	6		mov __D0BTCommCheck, __CBTCSArgs.Result
 4	17	8		release __CBTCSMutex
-4	4564	9	#line 4564 "C:\Users\gabre\Documents\GitHub\NXT\nxt\.\btio.nxc"
+4	4417	9	#line 4417 "C:\Users\gabre\Documents\GitHub\NXT\nxt\.\btio.nxc"
 4	16	9	#line 16 "C:\Users\gabre\Documents\GitHub\NXT\nxt\.\btio.nxc"
 4	17	9		mov __signed_stack_001BTCommCheck, __D0BTCommCheck
 4	16	11	#line 16 "C:\Users\gabre\Documents\GitHub\NXT\nxt\.\btio.nxc"
 4	17	11		set __D0BTCommCheck, 0
 4	16	14	#line 16 "C:\Users\gabre\Documents\GitHub\NXT\nxt\.\btio.nxc"
-4	17	14		cmp 4, __D0BTCommCheck, __signed_stack_001BTCommCheck, __D0BTCommCheck
+4	17	14		cmp 4, __zfBTCommCheck, __signed_stack_001BTCommCheck, __D0BTCommCheck
 4	16	18	#line 16 "C:\Users\gabre\Documents\GitHub\NXT\nxt\.\btio.nxc"
-4	17	18		mov __DU0BTCommCheck, __D0BTCommCheck
-4	16	20	#line 16 "C:\Users\gabre\Documents\GitHub\NXT\nxt\.\btio.nxc"
-4	17	20		subret __BTCommCheck_return
-4	16	22	#line 16 "C:\Users\gabre\Documents\GitHub\NXT\nxt\.\btio.nxc"
-4	16	22	#line 16 "C:\Users\gabre\Documents\GitHub\NXT\nxt\.\btio.nxc"
+4	17	18		mov __DU0BTCommCheck, __zfBTCommCheck
+4	17	20	#line 17 "C:\Users\gabre\Documents\GitHub\NXT\nxt\.\btio.nxc"
+4	17	20	#line 17 "C:\Users\gabre\Documents\GitHub\NXT\nxt\.\btio.nxc"
+4	18	20		subret __BTCommCheck_return
+4	17	22	#line 17 "C:\Users\gabre\Documents\GitHub\NXT\nxt\.\btio.nxc"
+4	17	22	#line 17 "C:\Users\gabre\Documents\GitHub\NXT\nxt\.\btio.nxc"
 4	19	22	#line 19 "C:\Users\gabre\Documents\GitHub\NXT\nxt\.\btio.nxc"
 4	20	22		subret __BTCommCheck_return
 5	20	0	#line 20 "C:\Users\gabre\Documents\GitHub\NXT\nxt\.\btio.nxc"
@@ -568,52 +611,53 @@ Clump	Line	PC	Source
 5	21	1		mov __CBTCSArgs.Connection, __BTWait_7qG2_connection_7qG2_000
 5	21	3		syscall 28, __CBTCSArgs
 5	21	6		mov __D0BTWait, __CBTCSArgs.Result
-5	21	8		release __CBTCSMutex
-5	4594	9	#line 4594 "C:\Users\gabre\Documents\GitHub\NXT\nxt\.\btio.nxc"
-5	20	9	#line 20 "C:\Users\gabre\Documents\GitHub\NXT\nxt\.\btio.nxc"
-5	21	9		mov __signed_stack_001BTWait, __D0BTWait
-5	20	11	#line 20 "C:\Users\gabre\Documents\GitHub\NXT\nxt\.\btio.nxc"
-5	21	11		set __D0BTWait, 0
-5	20	14	#line 20 "C:\Users\gabre\Documents\GitHub\NXT\nxt\.\btio.nxc"
-5	21	14		cmp 4, __D0BTWait, __signed_stack_001BTWait, __D0BTWait
-5	20	18	#line 20 "C:\Users\gabre\Documents\GitHub\NXT\nxt\.\btio.nxc"
-5	21	18		not __D0BTWait, __D0BTWait
-5	20	21	#line 20 "C:\Users\gabre\Documents\GitHub\NXT\nxt\.\btio.nxc"
-5	21	21		tst 5, __D0BTWait, __D0BTWait
-5	20	24	#line 20 "C:\Users\gabre\Documents\GitHub\NXT\nxt\.\btio.nxc"
-5	21	24		brtst 4, __ASM_Label_563, __D0BTWait
-5	20	27	#line 20 "C:\Users\gabre\Documents\GitHub\NXT\nxt\.\btio.nxc"
-5	20	27	#line 20 "C:\Users\gabre\Documents\GitHub\NXT\nxt\.\btio.nxc"
-5	21	27		jmp __ASM_Label_562
-5	20	29	#line 20 "C:\Users\gabre\Documents\GitHub\NXT\nxt\.\btio.nxc"
-5	23	29	#line 23 "C:\Users\gabre\Documents\GitHub\NXT\nxt\.\btio.nxc"
-5	24	29		subret __BTWait_return
+5	21	9		release __CBTCSMutex
+5	4447	10	#line 4447 "C:\Users\gabre\Documents\GitHub\NXT\nxt\.\btio.nxc"
+5	20	10	#line 20 "C:\Users\gabre\Documents\GitHub\NXT\nxt\.\btio.nxc"
+5	21	10		mov __signed_stack_001BTWait, __D0BTWait
+5	20	12	#line 20 "C:\Users\gabre\Documents\GitHub\NXT\nxt\.\btio.nxc"
+5	21	12		set __D0BTWait, 0
+5	20	15	#line 20 "C:\Users\gabre\Documents\GitHub\NXT\nxt\.\btio.nxc"
+5	21	15		cmp 4, __zfBTWait, __signed_stack_001BTWait, __D0BTWait
+5	20	19	#line 20 "C:\Users\gabre\Documents\GitHub\NXT\nxt\.\btio.nxc"
+5	20	19	#line 20 "C:\Users\gabre\Documents\GitHub\NXT\nxt\.\btio.nxc"
+5	21	19		not __D0BTWait, __zfBTWait
+5	21	22	#line 21 "C:\Users\gabre\Documents\GitHub\NXT\nxt\.\btio.nxc"
+5	22	22		tst 5, __zfBTWait, __D0BTWait
+5	21	25	#line 21 "C:\Users\gabre\Documents\GitHub\NXT\nxt\.\btio.nxc"
+5	22	25		brtst 4, __NXC_Label_494, __zfBTWait
+5	21	28	#line 21 "C:\Users\gabre\Documents\GitHub\NXT\nxt\.\btio.nxc"
+5	21	28	#line 21 "C:\Users\gabre\Documents\GitHub\NXT\nxt\.\btio.nxc"
+5	22	28		jmp __NXC_Label_493
+5	21	30	#line 21 "C:\Users\gabre\Documents\GitHub\NXT\nxt\.\btio.nxc"
+5	23	30	#line 23 "C:\Users\gabre\Documents\GitHub\NXT\nxt\.\btio.nxc"
+5	24	30		subret __BTWait_return
 6	44	0	#line 44 "C:\Users\gabre\Documents\GitHub\NXT\nxt\.\btio.nxc"
 6	45	0		mov __BTWait_7qG2_connection_7qG2_000, __BTReceiveMessage_7qG2_connection_7qG2_000
 6	44	2	#line 44 "C:\Users\gabre\Documents\GitHub\NXT\nxt\.\btio.nxc"
-6	44	2	#line 44 "C:\Users\gabre\Documents\GitHub\NXT\nxt\.\btio.nxc"
-6	45	2		subcall BTWait, __BTWait_return
-6	44	4	#line 44 "C:\Users\gabre\Documents\GitHub\NXT\nxt\.\btio.nxc"
+6	45	2	#line 45 "C:\Users\gabre\Documents\GitHub\NXT\nxt\.\btio.nxc"
+6	46	2		subcall BTWait, __BTWait_return
+6	45	4	#line 45 "C:\Users\gabre\Documents\GitHub\NXT\nxt\.\btio.nxc"
 6	45	4	#line 45 "C:\Users\gabre\Documents\GitHub\NXT\nxt\.\btio.nxc"
 6	46	4	#pragma macro 7
 6	46	4		mov __MRArgs.QueueID, __BTReceiveMessage_7qG2_mailbox_7qG2_000
 6	46	6		mov __MRArgs.Remove, __BTReceiveMessage_7qG2_flush_7qG2_000
 6	46	8		syscall 27, __MRArgs
 6	46	11		mov __BTReceiveMessage_7qG2_msg_7qG2_000, __MRArgs.Message
-6	4868	13	#line 4868 "C:\Users\gabre\Documents\GitHub\NXT\nxt\.\btio.nxc"
+6	4715	13	#line 4715 "C:\Users\gabre\Documents\GitHub\NXT\nxt\.\btio.nxc"
 6	45	13	#line 45 "C:\Users\gabre\Documents\GitHub\NXT\nxt\.\btio.nxc"
 6	45	13	#line 45 "C:\Users\gabre\Documents\GitHub\NXT\nxt\.\btio.nxc"
 6	46	13	#line 46 "C:\Users\gabre\Documents\GitHub\NXT\nxt\.\btio.nxc"
 6	47	13		mov __BTWait_7qG2_connection_7qG2_000, __BTReceiveMessage_7qG2_connection_7qG2_000
 6	46	15	#line 46 "C:\Users\gabre\Documents\GitHub\NXT\nxt\.\btio.nxc"
-6	46	15	#line 46 "C:\Users\gabre\Documents\GitHub\NXT\nxt\.\btio.nxc"
-6	47	15		subcall BTWait, __BTWait_return
-6	46	17	#line 46 "C:\Users\gabre\Documents\GitHub\NXT\nxt\.\btio.nxc"
+6	47	15	#line 47 "C:\Users\gabre\Documents\GitHub\NXT\nxt\.\btio.nxc"
+6	48	15		subcall BTWait, __BTWait_return
 6	47	17	#line 47 "C:\Users\gabre\Documents\GitHub\NXT\nxt\.\btio.nxc"
-6	48	17		strcat __strbufBTReceiveMessage, __BTReceiveMessage_7qG2_msg_7qG2_000
-6	47	21	#line 47 "C:\Users\gabre\Documents\GitHub\NXT\nxt\.\btio.nxc"
-6	48	21		subret __BTReceiveMessage_return
-6	47	23	#line 47 "C:\Users\gabre\Documents\GitHub\NXT\nxt\.\btio.nxc"
+6	48	17	#line 48 "C:\Users\gabre\Documents\GitHub\NXT\nxt\.\btio.nxc"
+6	49	17		strcat __strbufBTReceiveMessage, __BTReceiveMessage_7qG2_msg_7qG2_000
+6	48	21	#line 48 "C:\Users\gabre\Documents\GitHub\NXT\nxt\.\btio.nxc"
+6	49	21		subret __BTReceiveMessage_return
+6	48	23	#line 48 "C:\Users\gabre\Documents\GitHub\NXT\nxt\.\btio.nxc"
 6	49	23	#line 49 "C:\Users\gabre\Documents\GitHub\NXT\nxt\.\btio.nxc"
 6	50	23		subret __BTReceiveMessage_return
 7	39	0	#line 39 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
@@ -627,25 +671,25 @@ Clump	Line	PC	Source
 7	39	9	#line 39 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
 7	39	9	#line 39 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
 7	40	9		set __D0init_bluetooth, 0
-7	39	12	#line 39 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-7	40	12		acquire __SPTArgsMutex
-7	39	13	#line 39 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-7	40	13		mov __SPTArgs.Frequency, __signed_stack_001init_bluetooth
-7	39	15	#line 39 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-7	40	15		mov __SPTArgs.Duration, __signed_stack_002init_bluetooth
-7	39	17	#line 39 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-7	40	17		mov __SPTArgs.Volume, __signed_stack_003init_bluetooth
-7	39	19	#line 39 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-7	40	19		mov __SPTArgs.Loop, __D0init_bluetooth
-7	39	22	#line 39 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-7	40	22		syscall 10, __SPTArgs
-7	39	25	#line 39 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-7	40	25		mov __D0init_bluetooth, __SPTArgs.Result
-7	39	28	#line 39 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-7	40	28		release __SPTArgsMutex
-7	39	29	#line 39 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+7	40	12	#line 40 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+7	41	12		acquire __SPTArgsMutex
+7	40	13	#line 40 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+7	41	13		mov __SPTArgs.Frequency, __signed_stack_001init_bluetooth
+7	40	15	#line 40 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+7	41	15		mov __SPTArgs.Duration, __signed_stack_002init_bluetooth
+7	40	17	#line 40 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+7	41	17		mov __SPTArgs.Volume, __signed_stack_003init_bluetooth
+7	40	19	#line 40 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+7	41	19		mov __SPTArgs.Loop, __D0init_bluetooth
+7	40	22	#line 40 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+7	41	22		syscall 10, __SPTArgs
+7	40	25	#line 40 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+7	41	25		mov __D0init_bluetooth, __SPTArgs.Result
+7	40	28	#line 40 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+7	41	28		release __SPTArgsMutex
 7	40	29	#line 40 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-7	41	29		set __BTCommCheck_7qG2_connection_7qG2_000, 1
+7	40	29	#line 40 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+7	41	29		set __BTCommCheck_7qG2_connection_7qG2_000, 0
 7	40	32	#line 40 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
 7	40	32	#line 40 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
 7	41	32		subcall BTCommCheck, __BTCommCheck_return
@@ -653,18 +697,18 @@ Clump	Line	PC	Source
 7	40	34	#line 40 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
 7	41	34		not __DU0init_bluetooth, __DU0BTCommCheck
 7	41	37	#line 41 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-7	42	37		tst 5, __D0init_bluetooth, __DU0init_bluetooth
+7	42	37		tst 5, __zfinit_bluetooth, __DU0init_bluetooth
 7	41	40	#line 41 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-7	42	40		brtst 4, __ASM_Label_619, __D0init_bluetooth
+7	42	40		brtst 4, __NXC_Label_550, __zfinit_bluetooth
 7	41	43	#line 41 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-7	42	43		set __Wait_7qG2_ms_7qG2_000_inline_init_bluetooth, 1000
+7	42	43		set __Wait_7qG2_ms_7qG2_000_inline_init_bluetooth, 300
 7	41	46	#line 41 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-7	8869	46	#line 8869 "NXCDefs.h"
-7	8870	46		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_init_bluetooth
-7	8869	49	#line 8869 "NXCDefs.h"
-7	41	49	#line 41 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+7	7921	46	#line 7921 "NXCDefs.h"
+7	7922	46		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_init_bluetooth
+7	7921	49	#line 7921 "NXCDefs.h"
+7	42	49	#line 42 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
 7	43	49	#line 43 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-7	44	49		jmp __ASM_Label_618
+7	44	49		jmp __NXC_Label_549
 7	43	51	#line 43 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
 7	43	51	#line 43 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
 7	44	51		set __signed_stack_001init_bluetooth, 262
@@ -677,43 +721,43 @@ Clump	Line	PC	Source
 7	43	60	#line 43 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
 7	43	60	#line 43 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
 7	44	60		set __D0init_bluetooth, 0
-7	43	63	#line 43 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-7	44	63		acquire __SPTArgsMutex
-7	43	64	#line 43 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-7	44	64		mov __SPTArgs.Frequency, __signed_stack_001init_bluetooth
-7	43	66	#line 43 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-7	44	66		mov __SPTArgs.Duration, __signed_stack_002init_bluetooth
-7	43	68	#line 43 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-7	44	68		mov __SPTArgs.Volume, __signed_stack_003init_bluetooth
-7	43	70	#line 43 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-7	44	70		mov __SPTArgs.Loop, __D0init_bluetooth
-7	43	73	#line 43 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-7	44	73		syscall 10, __SPTArgs
-7	43	76	#line 43 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-7	44	76		mov __D0init_bluetooth, __SPTArgs.Result
-7	43	79	#line 43 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-7	44	79		release __SPTArgsMutex
-7	43	80	#line 43 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+7	44	63	#line 44 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+7	45	63		acquire __SPTArgsMutex
+7	44	64	#line 44 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+7	45	64		mov __SPTArgs.Frequency, __signed_stack_001init_bluetooth
+7	44	66	#line 44 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+7	45	66		mov __SPTArgs.Duration, __signed_stack_002init_bluetooth
+7	44	68	#line 44 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+7	45	68		mov __SPTArgs.Volume, __signed_stack_003init_bluetooth
+7	44	70	#line 44 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+7	45	70		mov __SPTArgs.Loop, __D0init_bluetooth
+7	44	73	#line 44 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+7	45	73		syscall 10, __SPTArgs
+7	44	76	#line 44 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+7	45	76		mov __D0init_bluetooth, __SPTArgs.Result
+7	44	79	#line 44 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+7	45	79		release __SPTArgsMutex
+7	44	80	#line 44 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
 7	46	80	#line 46 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
 7	47	80		subret __init_bluetooth_return
 8	52	0	#line 52 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-8	53	0		set __BTReceiveMessage_7qG2_connection_7qG2_000, 1
+8	53	0		set __BTReceiveMessage_7qG2_connection_7qG2_000, 0
 8	52	3	#line 52 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
 8	52	3	#line 52 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-8	53	3		set __BTReceiveMessage_7qG2_mailbox_7qG2_000, 0
+8	53	3		set __BTReceiveMessage_7qG2_mailbox_7qG2_000, 1
 8	52	6	#line 52 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
 8	52	6	#line 52 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
 8	53	6		set __BTReceiveMessage_7qG2_flush_7qG2_000, 1
 8	52	9	#line 52 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-8	52	9	#line 52 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-8	53	9		subcall BTReceiveMessage, __BTReceiveMessage_return
-8	52	11	#line 52 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-8	53	11		mov __strretvalis_start_msg_received, __strbufBTReceiveMessage
-8	52	13	#line 52 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-8	53	13		strcat __strbufis_start_msg_received, __strretvalis_start_msg_received
-8	52	17	#line 52 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-8	53	17		mov __is_start_msg_received_7qG2_message_7qG2_000, __strbufis_start_msg_received
-8	52	19	#line 52 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+8	53	9	#line 53 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+8	54	9		subcall BTReceiveMessage, __BTReceiveMessage_return
+8	53	11	#line 53 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+8	54	11		mov __strretvalis_start_msg_received, __strbufBTReceiveMessage
+8	53	13	#line 53 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+8	54	13		strcat __strbufis_start_msg_received, __strretvalis_start_msg_received
+8	53	17	#line 53 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+8	54	17		mov __is_start_msg_received_7qG2_message_7qG2_000, __strbufis_start_msg_received
+8	53	19	#line 53 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
 8	53	19	#line 53 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
 8	54	19		strcat __strbufis_start_msg_received, __is_start_msg_received_7qG2_message_7qG2_000
 8	53	23	#line 53 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
@@ -721,12 +765,13 @@ Clump	Line	PC	Source
 8	53	25	#line 53 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
 8	54	25		strcat __strbufis_start_msg_received, __constStr0009
 8	53	29	#line 53 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-8	54	29		cmp 4, __D0is_start_msg_received, __strtmpbufis_start_msg_received, __strbufis_start_msg_received
+8	54	29		cmp 4, __zfis_start_msg_received, __strtmpbufis_start_msg_received, __strbufis_start_msg_received
 8	53	33	#line 53 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-8	54	33		mov __DU0is_start_msg_received, __D0is_start_msg_received
-8	53	35	#line 53 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-8	54	35		subret __is_start_msg_received_return
-8	53	37	#line 53 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+8	54	33		mov __DU0is_start_msg_received, __zfis_start_msg_received
+8	54	35	#line 54 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+8	54	35	#line 54 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+8	55	35		subret __is_start_msg_received_return
+8	54	37	#line 54 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
 8	56	37	#line 56 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
 8	57	37		subret __is_start_msg_received_return
 9	57	0	#line 57 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
@@ -735,58 +780,61 @@ Clump	Line	PC	Source
 9	57	2	#line 57 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
 9	58	2		set __D0normalizePower, 100
 9	57	5	#line 57 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-9	58	5		cmp 1, __D0normalizePower, __signed_stack_001normalizePower, __D0normalizePower
-9	58	9	#line 58 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-9	59	9		brtst 4, __ASM_Label_650, __D0normalizePower
-9	58	12	#line 58 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-9	59	12		set __D0normalizePower, 100
-9	58	15	#line 58 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-9	59	15		subret __normalizePower_return
-9	58	17	#line 58 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+9	58	5		cmp 1, __zfnormalizePower, __signed_stack_001normalizePower, __D0normalizePower
+9	57	9	#line 57 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+9	58	9		mov __D0normalizePower, __zfnormalizePower
+9	58	11	#line 58 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+9	59	11		brtst 4, __NXC_Label_581, __zfnormalizePower
+9	59	14	#line 59 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+9	60	14		set __D0normalizePower, 100
 9	59	17	#line 59 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-9	60	17		jmp __ASM_Label_653
+9	60	17		subret __normalizePower_return
 9	59	19	#line 59 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-9	60	19		mov __signed_stack_001normalizePower, __normalizePower_7qG2_p_7qG2_000
+9	59	19	#line 59 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+9	60	19		jmp __NXC_Label_584
 9	59	21	#line 59 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-9	59	21	#line 59 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-9	60	21		mov __D0normalizePower, __constValNeg100
+9	60	21		mov __signed_stack_001normalizePower, __normalizePower_7qG2_p_7qG2_000
 9	59	23	#line 59 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-9	60	23		cmp 0, __D0normalizePower, __signed_stack_001normalizePower, __D0normalizePower
-9	60	27	#line 60 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-9	61	27		brtst 4, __ASM_Label_656, __D0normalizePower
-9	60	30	#line 60 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-9	61	30		mov __D0normalizePower, __constValNeg100
-9	60	32	#line 60 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-9	61	32		subret __normalizePower_return
-9	60	34	#line 60 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-9	62	34	#line 62 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-9	62	34	#line 62 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-9	62	34	#line 62 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-9	63	34		mov __D0normalizePower, __normalizePower_7qG2_p_7qG2_000
-9	62	36	#line 62 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-9	63	36		subret __normalizePower_return
+9	59	23	#line 59 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+9	60	23		mov __D0normalizePower, __constValNeg100
+9	59	25	#line 59 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+9	60	25		cmp 0, __zfnormalizePower, __signed_stack_001normalizePower, __D0normalizePower
+9	59	29	#line 59 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+9	60	29		mov __D0normalizePower, __zfnormalizePower
+9	60	31	#line 60 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+9	61	31		brtst 4, __NXC_Label_587, __zfnormalizePower
+9	61	34	#line 61 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+9	62	34		mov __D0normalizePower, __constValNeg100
+9	61	36	#line 61 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+9	62	36		subret __normalizePower_return
+9	61	38	#line 61 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
 9	62	38	#line 62 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-9	65	38	#line 65 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-9	66	38		subret __normalizePower_return
+9	62	38	#line 62 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+9	63	38	#line 63 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+9	64	38		mov __D0normalizePower, __normalizePower_7qG2_p_7qG2_000
+9	63	40	#line 63 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+9	64	40		subret __normalizePower_return
+9	63	42	#line 63 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+9	65	42	#line 65 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+9	66	42		subret __normalizePower_return
 10	66	0	#line 66 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
 10	67	0		getout __signed_stack_001is_wall_outer_edge_reached, __constVal0, 14
 10	66	4	#line 66 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
 10	66	4	#line 66 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-10	67	4		mov __signed_stack_002is_wall_outer_edge_reached, __is_wall_outer_edge_reached_7qG2_last_rotation_count_when_wall_seen_7qG2_000
-10	66	6	#line 66 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-10	66	6	#line 66 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-10	67	6		set __D0is_wall_outer_edge_reached, 360
-10	66	9	#line 66 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-10	67	9		add __D0is_wall_outer_edge_reached, __signed_stack_002is_wall_outer_edge_reached, __D0is_wall_outer_edge_reached
-10	66	13	#line 66 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-10	67	13		cmp 0, __D0is_wall_outer_edge_reached, __signed_stack_001is_wall_outer_edge_reached, __D0is_wall_outer_edge_reached
-10	66	17	#line 66 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-10	67	17		mov __DU0is_wall_outer_edge_reached, __D0is_wall_outer_edge_reached
-10	66	19	#line 66 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-10	67	19		subret __is_wall_outer_edge_reached_return
-10	66	21	#line 66 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-10	69	21	#line 69 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-10	70	21		subret __is_wall_outer_edge_reached_return
+10	66	4	#line 66 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+10	66	4	#line 66 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+10	66	4	#line 66 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+10	67	4		add __D0is_wall_outer_edge_reached, __is_wall_outer_edge_reached_7qG2_last_rotation_count_when_wall_seen_7qG2_000, __constVal360
+10	67	8	#line 67 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+10	68	8		cmp 0, __zfis_wall_outer_edge_reached, __signed_stack_001is_wall_outer_edge_reached, __D0is_wall_outer_edge_reached
+10	67	12	#line 67 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+10	68	12		mov __DU0is_wall_outer_edge_reached, __zfis_wall_outer_edge_reached
+10	67	14	#line 67 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+10	67	14	#line 67 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+10	68	14		subret __is_wall_outer_edge_reached_return
+10	67	16	#line 67 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+10	69	16	#line 69 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+10	70	16		subret __is_wall_outer_edge_reached_return
 11	70	0	#line 70 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
 11	71	0		mov __is_wall_outer_edge_reached_7qG2_last_rotation_count_when_wall_seen_7qG2_000, __steer_outer_corner_7qG2_last_rotation_count_when_wall_seen_7qG2_000
 11	70	2	#line 70 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
@@ -795,50 +843,52 @@ Clump	Line	PC	Source
 11	70	4	#line 70 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
 11	71	4		mov __DU0steer_outer_corner, __DU0is_wall_outer_edge_reached
 11	71	6	#line 71 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-11	72	6		tst 5, __D0steer_outer_corner, __DU0steer_outer_corner
+11	72	6		tst 5, __zfsteer_outer_corner, __DU0steer_outer_corner
 11	71	9	#line 71 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-11	72	9		brtst 4, __ASM_Label_669, __D0steer_outer_corner
-11	71	12	#line 71 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-11	72	12		set __D0steer_outer_corner, 0
-11	71	15	#line 71 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-11	72	15		subret __steer_outer_corner_return
-11	71	17	#line 71 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+11	72	9		brtst 4, __NXC_Label_600, __zfsteer_outer_corner
+11	72	12	#line 72 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+11	73	12		set __D0steer_outer_corner, 0
+11	72	15	#line 72 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+11	73	15		subret __steer_outer_corner_return
+11	72	17	#line 72 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
 11	73	17	#line 73 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-11	74	17		jmp __ASM_Label_672
-11	73	19	#line 73 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-11	74	19		set __D0steer_outer_corner, 90
-11	73	22	#line 73 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-11	74	22		subret __steer_outer_corner_return
-11	73	24	#line 73 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+11	74	17		jmp __NXC_Label_603
+11	74	19	#line 74 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+11	75	19		set __D0steer_outer_corner, 90
+11	74	22	#line 74 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+11	75	22		subret __steer_outer_corner_return
+11	74	24	#line 74 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
 11	77	24	#line 77 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
 11	77	24	#line 77 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
 11	78	24		subret __steer_outer_corner_return
 12	78	0	#line 78 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
 12	79	0		mov __signed_stack_001is_wall_disappeared, __is_wall_disappeared_7qG2_us_right_value_7qG2_000
 12	78	2	#line 78 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-12	78	2	#line 78 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-12	79	2		set __D0is_wall_disappeared, 50
-12	78	5	#line 78 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-12	79	5		cmp 1, __D0is_wall_disappeared, __signed_stack_001is_wall_disappeared, __D0is_wall_disappeared
-12	78	9	#line 78 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-12	79	9		mov __DU0is_wall_disappeared, __D0is_wall_disappeared
-12	78	11	#line 78 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-12	79	11		subret __is_wall_disappeared_return
-12	78	13	#line 78 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+12	79	2	#line 79 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+12	80	2		set __D0is_wall_disappeared, 50
+12	79	5	#line 79 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+12	80	5		cmp 1, __zfis_wall_disappeared, __signed_stack_001is_wall_disappeared, __D0is_wall_disappeared
+12	79	9	#line 79 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+12	80	9		mov __DU0is_wall_disappeared, __zfis_wall_disappeared
+12	79	11	#line 79 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+12	79	11	#line 79 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+12	80	11		subret __is_wall_disappeared_return
+12	79	13	#line 79 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
 12	81	13	#line 81 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
 12	82	13		subret __is_wall_disappeared_return
 13	82	0	#line 82 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
 13	83	0		mov __signed_stack_001is_steering_left_too_much, __is_steering_left_too_much_7qG2_current_steer_7qG2_000
 13	82	2	#line 82 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-13	82	2	#line 82 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-13	83	2		mov __D0is_steering_left_too_much, __constValNeg120
-13	82	4	#line 82 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-13	83	4		cmp 0, __D0is_steering_left_too_much, __signed_stack_001is_steering_left_too_much, __D0is_steering_left_too_much
-13	82	8	#line 82 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-13	83	8		mov __DU0is_steering_left_too_much, __D0is_steering_left_too_much
-13	82	10	#line 82 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-13	83	10		subret __is_steering_left_too_much_return
-13	82	12	#line 82 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+13	83	2	#line 83 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+13	84	2		mov __D0is_steering_left_too_much, __constValNeg120
+13	83	4	#line 83 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+13	84	4		cmp 0, __zfis_steering_left_too_much, __signed_stack_001is_steering_left_too_much, __D0is_steering_left_too_much
+13	83	8	#line 83 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+13	84	8		mov __DU0is_steering_left_too_much, __zfis_steering_left_too_much
+13	83	10	#line 83 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+13	83	10	#line 83 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+13	84	10		subret __is_steering_left_too_much_return
+13	83	12	#line 83 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
 13	85	12	#line 85 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
 13	86	12		subret __is_steering_left_too_much_return
 14	86	0	#line 86 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
@@ -847,26 +897,28 @@ Clump	Line	PC	Source
 14	86	2	#line 86 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
 14	87	2		set __D0is_front_wall_too_close, 23
 14	86	5	#line 86 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-14	87	5		cmp 0, __D0is_front_wall_too_close, __signed_stack_001is_front_wall_too_close, __D0is_front_wall_too_close
+14	87	5		cmp 0, __zfis_front_wall_too_close, __signed_stack_001is_front_wall_too_close, __D0is_front_wall_too_close
 14	86	9	#line 86 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-14	87	9		mov __DU0is_front_wall_too_close, __D0is_front_wall_too_close
-14	86	11	#line 86 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-14	87	11		subret __is_front_wall_too_close_return
-14	86	13	#line 86 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+14	87	9		mov __DU0is_front_wall_too_close, __zfis_front_wall_too_close
+14	87	11	#line 87 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+14	87	11	#line 87 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+14	88	11		subret __is_front_wall_too_close_return
+14	87	13	#line 87 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
 14	89	13	#line 89 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
 14	90	13		subret __is_front_wall_too_close_return
 15	90	0	#line 90 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
 15	91	0		mov __signed_stack_001is_steering_left_not_enough, __is_steering_left_not_enough_7qG2_current_steer_7qG2_000
 15	90	2	#line 90 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-15	90	2	#line 90 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-15	91	2		mov __D0is_steering_left_not_enough, __constValNeg90
-15	90	4	#line 90 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-15	91	4		cmp 1, __D0is_steering_left_not_enough, __signed_stack_001is_steering_left_not_enough, __D0is_steering_left_not_enough
-15	90	8	#line 90 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-15	91	8		mov __DU0is_steering_left_not_enough, __D0is_steering_left_not_enough
-15	90	10	#line 90 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-15	91	10		subret __is_steering_left_not_enough_return
-15	90	12	#line 90 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+15	91	2	#line 91 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+15	92	2		mov __D0is_steering_left_not_enough, __constValNeg90
+15	91	4	#line 91 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+15	92	4		cmp 1, __zfis_steering_left_not_enough, __signed_stack_001is_steering_left_not_enough, __D0is_steering_left_not_enough
+15	91	8	#line 91 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+15	92	8		mov __DU0is_steering_left_not_enough, __zfis_steering_left_not_enough
+15	91	10	#line 91 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+15	91	10	#line 91 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+15	92	10		subret __is_steering_left_not_enough_return
+15	91	12	#line 91 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
 15	93	12	#line 93 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
 15	94	12		subret __is_steering_left_not_enough_return
 16	94	0	#line 94 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
@@ -877,25 +929,32 @@ Clump	Line	PC	Source
 16	94	4	#line 94 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
 16	95	4		mov __DU0is_bigger_left_steer_needed, __DU0is_front_wall_too_close
 16	94	6	#line 94 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-16	95	6		tst 5, __D0is_bigger_left_steer_needed, __DU0is_bigger_left_steer_needed
+16	95	6		tst 5, __zfis_bigger_left_steer_needed, __DU0is_bigger_left_steer_needed
 16	94	9	#line 94 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-16	95	9		brtst 4, __ASM_Label_686, __D0is_bigger_left_steer_needed
-16	94	12	#line 94 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-16	95	12		mov __is_steering_left_not_enough_7qG2_current_steer_7qG2_000, __is_bigger_left_steer_needed_7qG2_current_steer_7qG2_000
+16	95	9		mov __D0is_bigger_left_steer_needed, __zfis_bigger_left_steer_needed
+16	94	11	#line 94 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+16	95	11		brtst 4, __NXC_Label_617, __zfis_bigger_left_steer_needed
 16	94	14	#line 94 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-16	94	14	#line 94 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-16	95	14		subcall is_steering_left_not_enough, __is_steering_left_not_enough_return
+16	95	14		mov __signed_stack_001is_bigger_left_steer_needed, __D0is_bigger_left_steer_needed
 16	94	16	#line 94 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-16	95	16		mov __DU0is_bigger_left_steer_needed, __DU0is_steering_left_not_enough
+16	95	16		mov __is_steering_left_not_enough_7qG2_current_steer_7qG2_000, __is_bigger_left_steer_needed_7qG2_current_steer_7qG2_000
 16	94	18	#line 94 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-16	95	18		tst 5, __D0is_bigger_left_steer_needed, __DU0is_bigger_left_steer_needed
-16	94	21	#line 94 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-16	95	21		mov __DU0is_bigger_left_steer_needed, __D0is_bigger_left_steer_needed
-16	94	23	#line 94 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-16	95	23		subret __is_bigger_left_steer_needed_return
-16	94	25	#line 94 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-16	97	25	#line 97 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-16	98	25		subret __is_bigger_left_steer_needed_return
+16	95	18	#line 95 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+16	96	18		subcall is_steering_left_not_enough, __is_steering_left_not_enough_return
+16	95	20	#line 95 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+16	96	20		mov __DU0is_bigger_left_steer_needed, __DU0is_steering_left_not_enough
+16	95	22	#line 95 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+16	96	22		tst 5, __zfis_bigger_left_steer_needed, __DU0is_bigger_left_steer_needed
+16	95	25	#line 95 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+16	95	25	#line 95 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+16	96	25		and __D0is_bigger_left_steer_needed, __signed_stack_001is_bigger_left_steer_needed, __zfis_bigger_left_steer_needed
+16	95	29	#line 95 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+16	96	29		mov __DU0is_bigger_left_steer_needed, __D0is_bigger_left_steer_needed
+16	95	31	#line 95 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+16	96	31		subret __is_bigger_left_steer_needed_return
+16	95	33	#line 95 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+16	97	33	#line 97 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+16	98	33		subret __is_bigger_left_steer_needed_return
 17	98	0	#line 98 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
 17	99	0		mov __is_steering_left_too_much_7qG2_current_steer_7qG2_000, __steer_forward_or_take_inner_corner_7qG2_current_steer_7qG2_000
 17	98	2	#line 98 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
@@ -904,16 +963,16 @@ Clump	Line	PC	Source
 17	98	4	#line 98 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
 17	99	4		mov __DU0steer_forward_or_take_inner_corner, __DU0is_steering_left_too_much
 17	99	6	#line 99 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-17	100	6		tst 5, __D0steer_forward_or_take_inner_corner, __DU0steer_forward_or_take_inner_corner
+17	100	6		tst 5, __zfsteer_forward_or_take_inner_corner, __DU0steer_forward_or_take_inner_corner
 17	99	9	#line 99 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-17	100	9		brtst 4, __ASM_Label_695, __D0steer_forward_or_take_inner_corner
-17	99	12	#line 99 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-17	100	12		mov __D0steer_forward_or_take_inner_corner, __constValNeg120
-17	99	14	#line 99 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-17	100	14		subret __steer_forward_or_take_inner_corner_return
-17	99	16	#line 99 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+17	100	9		brtst 4, __NXC_Label_626, __zfsteer_forward_or_take_inner_corner
+17	100	12	#line 100 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+17	101	12		mov __D0steer_forward_or_take_inner_corner, __constValNeg120
+17	100	14	#line 100 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+17	101	14		subret __steer_forward_or_take_inner_corner_return
+17	100	16	#line 100 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
 17	101	16	#line 101 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-17	102	16		jmp __ASM_Label_698
+17	102	16		jmp __NXC_Label_629
 17	101	18	#line 101 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
 17	102	18	#pragma macro 26
 17	102	18		acquire __RLSBmutex1
@@ -923,11 +982,11 @@ Clump	Line	PC	Source
 17	102	27		subcall __ReadLSBytes1, ____ReadLSBytes1_return
 17	102	29		index __D0steer_forward_or_take_inner_corner, __RLSReadBuf1, 65535
 17	102	33		release __RLSBmutex1
-17	5397	34	#line 5397 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+17	5280	34	#line 5280 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
 17	101	34	#line 101 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
 17	102	34	#line 102 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-17	102	34	#line 102 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
 17	103	34		mov __is_bigger_left_steer_needed_7qG2_us_front_value_7qG2_000, __D0steer_forward_or_take_inner_corner
+17	102	36	#line 102 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
 17	102	36	#line 102 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
 17	103	36		mov __is_bigger_left_steer_needed_7qG2_current_steer_7qG2_000, __steer_forward_or_take_inner_corner_7qG2_current_steer_7qG2_000
 17	102	38	#line 102 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
@@ -936,93 +995,89 @@ Clump	Line	PC	Source
 17	102	40	#line 102 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
 17	103	40		mov __DU0steer_forward_or_take_inner_corner, __DU0is_bigger_left_steer_needed
 17	103	42	#line 103 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-17	104	42		tst 5, __D0steer_forward_or_take_inner_corner, __DU0steer_forward_or_take_inner_corner
+17	104	42		tst 5, __zfsteer_forward_or_take_inner_corner, __DU0steer_forward_or_take_inner_corner
 17	103	45	#line 103 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-17	104	45		brtst 4, __ASM_Label_707, __D0steer_forward_or_take_inner_corner
-17	103	48	#line 103 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-17	104	48		mov __D0steer_forward_or_take_inner_corner, __constValNeg90
-17	103	50	#line 103 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-17	104	50		subret __steer_forward_or_take_inner_corner_return
-17	103	52	#line 103 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+17	104	45		brtst 4, __NXC_Label_638, __zfsteer_forward_or_take_inner_corner
+17	104	48	#line 104 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+17	105	48		mov __D0steer_forward_or_take_inner_corner, __constValNeg90
+17	104	50	#line 104 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+17	105	50		subret __steer_forward_or_take_inner_corner_return
+17	104	52	#line 104 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
 17	105	52	#line 105 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-17	106	52		jmp __ASM_Label_710
-17	105	54	#line 105 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-17	106	54		mov __D0steer_forward_or_take_inner_corner, __steer_forward_or_take_inner_corner_7qG2_current_steer_7qG2_000
-17	105	56	#line 105 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-17	106	56		subret __steer_forward_or_take_inner_corner_return
-17	105	58	#line 105 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+17	106	52		jmp __NXC_Label_641
+17	106	54	#line 106 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+17	107	54		mov __D0steer_forward_or_take_inner_corner, __steer_forward_or_take_inner_corner_7qG2_current_steer_7qG2_000
+17	106	56	#line 106 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+17	107	56		subret __steer_forward_or_take_inner_corner_return
+17	106	58	#line 106 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
 17	108	58	#line 108 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
 17	110	58	#line 110 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
 17	110	58	#line 110 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
 17	111	58		subret __steer_forward_or_take_inner_corner_return
 18	111	0	#line 111 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-18	112	0		mov __signed_stack_001calculate_suggested_steer_value, __calculate_suggested_steer_value_7qG2_us_right_value_7qG2_000
-18	111	2	#line 111 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-18	111	2	#line 111 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-18	112	2		set __D0calculate_suggested_steer_value, 33
-18	111	5	#line 111 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-18	112	5		sub __D0calculate_suggested_steer_value, __signed_stack_001calculate_suggested_steer_value, __D0calculate_suggested_steer_value
-18	111	9	#line 111 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-18	112	9		subret __calculate_suggested_steer_value_return
-18	111	11	#line 111 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-18	114	11	#line 114 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-18	115	11		subret __calculate_suggested_steer_value_return
+18	111	0	#line 111 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+18	112	0	#line 112 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+18	112	0	#line 112 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+18	113	0		sub __D0calculate_suggested_steer_value, __calculate_suggested_steer_value_7qG2_us_right_value_7qG2_000, __constVal33
+18	112	4	#line 112 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+18	113	4		subret __calculate_suggested_steer_value_return
+18	112	6	#line 112 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+18	114	6	#line 114 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+18	115	6		subret __calculate_suggested_steer_value_return
 19	115	0	#line 115 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-19	116	0		set __signed_stack_001set_motors, 20
-19	115	3	#line 115 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-19	115	3	#line 115 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-19	115	3	#line 115 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-19	116	3		add __normalizePower_7qG2_p_7qG2_000, __signed_stack_001set_motors, __set_motors_7qG2_robot_steer_7qG2_000
-19	115	7	#line 115 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-19	115	7	#line 115 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-19	116	7		subcall normalizePower, __normalizePower_return
-19	115	9	#line 115 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-19	116	9		mov __D0set_motors, __D0normalizePower
-19	115	11	#line 115 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-19	116	11	#pragma macro 7
-19	116	11		setout __constVal1, 2, __D0set_motors, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-19	5497	34	#line 5497 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-19	115	34	#line 115 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-19	116	34	#line 116 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-19	117	34		set __signed_stack_001set_motors, 20
+19	115	0	#line 115 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+19	115	0	#line 115 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+19	115	0	#line 115 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+19	116	0		add __normalizePower_7qG2_p_7qG2_000, __constVal20, __set_motors_7qG2_robot_steer_7qG2_000
+19	115	4	#line 115 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+19	115	4	#line 115 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+19	116	4		subcall normalizePower, __normalizePower_return
+19	115	6	#line 115 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+19	116	6		mov __D0set_motors, __D0normalizePower
+19	116	8	#line 116 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+19	117	8	#pragma macro 7
+19	117	8		setout __constVal1, 2, __D0set_motors, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+19	5378	31	#line 5378 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+19	116	31	#line 116 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+19	116	31	#line 116 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+19	116	31	#line 116 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+19	116	31	#line 116 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+19	116	31	#line 116 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+19	117	31		sub __normalizePower_7qG2_p_7qG2_000, __constVal20, __set_motors_7qG2_robot_steer_7qG2_000
+19	116	35	#line 116 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+19	116	35	#line 116 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+19	117	35		subcall normalizePower, __normalizePower_return
 19	116	37	#line 116 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-19	116	37	#line 116 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-19	116	37	#line 116 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-19	117	37		sub __normalizePower_7qG2_p_7qG2_000, __signed_stack_001set_motors, __set_motors_7qG2_robot_steer_7qG2_000
-19	116	41	#line 116 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-19	116	41	#line 116 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-19	117	41		subcall normalizePower, __normalizePower_return
-19	116	43	#line 116 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-19	117	43		mov __D0set_motors, __D0normalizePower
-19	116	45	#line 116 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-19	117	45	#pragma macro 7
-19	117	45		setout __constVal0, 2, __D0set_motors, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-19	5520	68	#line 5520 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-19	116	68	#line 116 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-19	119	68	#line 119 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
-19	120	68		subret __set_motors_return
+19	117	37		mov __D0set_motors, __D0normalizePower
+19	117	39	#line 117 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+19	118	39	#pragma macro 7
+19	118	39		setout __constVal0, 2, __D0set_motors, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+19	5399	62	#line 5399 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+19	117	62	#line 117 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+19	119	62	#line 119 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
+19	120	62		subret __set_motors_return
 20	150	0	#line 150 "C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc"
 20	151	0		subret ____initialize_global_data_return
 #CLUMPS
 Clump	Name	Offset	File
 0	main	0	C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc
-1	__ResetSensorSubroutine	238	NXTDefs.h
-2	__ReadLSBytes0	251	NXTDefs.h
-3	__ReadLSBytes1	341	NXTDefs.h
-4	BTCommCheck	431	C:\Users\gabre\Documents\GitHub\NXT\nxt\.\btio.nxc
-5	BTWait	455	C:\Users\gabre\Documents\GitHub\NXT\nxt\.\btio.nxc
-6	BTReceiveMessage	486	C:\Users\gabre\Documents\GitHub\NXT\nxt\.\btio.nxc
-7	init_bluetooth	511	C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc
-8	is_start_msg_received	593	C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc
-9	normalizePower	632	C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc
-10	is_wall_outer_edge_reached	672	C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc
-11	steer_outer_corner	695	C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc
-12	is_wall_disappeared	721	C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc
-13	is_steering_left_too_much	736	C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc
-14	is_front_wall_too_close	750	C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc
-15	is_steering_left_not_enough	765	C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc
-16	is_bigger_left_steer_needed	779	C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc
-17	steer_forward_or_take_inner_corner	806	C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc
-18	calculate_suggested_steer_value	866	C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc
-19	set_motors	879	C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc
-20	__initialize_global_data	949	C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc
+1	__ResetSensorSubroutine	282	NXTDefs.h
+2	__ReadLSBytes0	295	NXTDefs.h
+3	__ReadLSBytes1	380	NXTDefs.h
+4	BTCommCheck	465	C:\Users\gabre\Documents\GitHub\NXT\nxt\.\btio.nxc
+5	BTWait	489	C:\Users\gabre\Documents\GitHub\NXT\nxt\.\btio.nxc
+6	BTReceiveMessage	521	C:\Users\gabre\Documents\GitHub\NXT\nxt\.\btio.nxc
+7	init_bluetooth	546	C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc
+8	is_start_msg_received	628	C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc
+9	normalizePower	667	C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc
+10	is_wall_outer_edge_reached	711	C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc
+11	steer_outer_corner	729	C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc
+12	is_wall_disappeared	755	C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc
+13	is_steering_left_too_much	770	C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc
+14	is_front_wall_too_close	784	C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc
+15	is_steering_left_not_enough	799	C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc
+16	is_bigger_left_steer_needed	813	C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc
+17	steer_forward_or_take_inner_corner	848	C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc
+18	calculate_suggested_steer_value	908	C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc
+19	set_motors	916	C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc
+20	__initialize_global_data	980	C:\Users\gabre\Documents\GitHub\NXT\nxt\wall_robot_bt.nxc
