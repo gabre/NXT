@@ -6,7 +6,6 @@
 void init_bt() {
     while( !BTCommCheck(BT_CONN) ) {
          TextOut(0, LCD_LINE1, "No BT connection");
-         PlayTone(100, 1000);
          Wait(1000);
     }
     PlayTone(262, 1000);

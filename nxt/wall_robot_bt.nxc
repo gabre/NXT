@@ -1,3 +1,5 @@
+#include "btio.nxc"
+
 #define RIGHT_MOTOR OUT_A
 #define LEFT_MOTOR  OUT_B
 
@@ -28,6 +30,29 @@
 #define NORMALIZATION_TRESHOLD				  100
 #define STARTING_MOTOR_ROTATION_COUNT			0
 
+#define BT_CONN 1
+#define MAILBOX 0
+#define REMOVE_MSG 1
+
+#define START_SYMBOL "START"
+
+void init_bluetooth() {
+    PlayTone(100, 2000);
+    while( !BTCommCheck(BT_CONN) ) {
+         Wait(300);
+    }
+    PlayTone(262, 2000);
+}
+
+void bluetooth_send(string message) {
+    BTSendMessage( BT_CONN, MAILBOX, message);
+}
+
+bool is_start_msg_received() {
+	string message;
+	message = BTReceiveMessage(BT_CONN, MAILBOX, REMOVE_MSG);
+	return (message == START_SYMBOL);
+}
 
 int normalizePower(int p){
   if (p > NORMALIZATION_TRESHOLD){
@@ -100,6 +125,12 @@ task main(){
 
   SetSensorLowspeed(US_FRONT);
   SetSensorLowspeed(US_RIGHT);
+  
+  init_bluetooth();
+  
+  PlayTone(50, 2000);
+  while(!is_start_msg_received()) {}
+  PlayTone(50, 2000);
 
   while(INFINITY){
     us_right_value = SensorUS(US_RIGHT);
