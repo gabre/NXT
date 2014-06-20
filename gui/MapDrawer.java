@@ -1,7 +1,10 @@
 package gui;
 
+import java.util.LinkedList;
 import java.util.Observable;
 import java.util.Observer;
+
+import com.sun.prism.image.Coords;
 
 import javafx.application.Application;
 import javafx.scene.Group;
@@ -14,10 +17,20 @@ import javafx.stage.Stage;
  
 public class MapDrawer implements Observer {
 	
+	private static final double DISTANCE = 5.0;
 	private GraphicsContext gc;
+	private Integer rotation;
+	private LinkedList<Coord> points;
+	private Coord latest;
+	
 
 	public MapDrawer(GraphicsContext gc) {
 		this.gc = gc;
+		rotation = 0;
+		points = new LinkedList<Coord>();
+		latest = new Coord(10,10);
+		gc.setStroke(Color.BLACK);
+        gc.setLineWidth(2);
 	}
 
     public void drawShapes() {
@@ -44,6 +57,29 @@ public class MapDrawer implements Observer {
     }
 
     public void update(Observable obj, Object arg) {
-        System.out.println("\nReceived Response: " + arg.toString() );
+        System.out.println("Received Response: " + (String)arg );
+        String message = (String)arg;
+        if(message.startsWith("STEER")) {
+        	Integer rotation = Integer.parseInt(message.substring(5));
+        	this.rotation += rotation;
+        }
+        if(message.startsWith("FWD")) {
+        	double xInc = Math.cos(Math.toRadians(rotation)) * DISTANCE;
+        	double yInc = Math.sin(Math.toRadians(rotation)) * DISTANCE;
+        	Coord newCoord = new Coord(latest);
+        	newCoord.x += xInc;
+        	newCoord.y += yInc;
+			points.add(newCoord);
+			System.out.println("---");
+			System.out.println(latest.x);
+			System.out.println(latest.y);
+			System.out.println(newCoord.x);
+			System.out.println(newCoord.y);
+			gc.strokeLine(latest.x, latest.y, newCoord.x, newCoord.y);
+			latest = newCoord;
+        }
+        if(points.size() > 1000) {
+        	points.clear();
+        }
     }
 }

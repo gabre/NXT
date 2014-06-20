@@ -114,7 +114,14 @@ int calculate_suggested_steer_value(int us_right_value){
 
 void set_motors(int robot_steer) {
 	OnFwd(LEFT_MOTOR, normalizePower(DEFAULT_POWER + robot_steer));
-    OnFwd(RIGHT_MOTOR, normalizePower(DEFAULT_POWER - robot_steer));
+  OnFwd(RIGHT_MOTOR, normalizePower(DEFAULT_POWER - robot_steer));
+}
+
+void send_data(int robot_steer) {
+  string rotationMsg = StrCat("STEER", NumToStr(robot_steer));
+  BTSendMessage( BT_CONN, MAILBOX, rotationMsg);
+  string forwardMsg = "FWD";
+  BTSendMessage( BT_CONN, MAILBOX, forwardMsg);
 }
 
 task main(){
@@ -125,9 +132,9 @@ task main(){
 
   SetSensorLowspeed(US_FRONT);
   SetSensorLowspeed(US_RIGHT);
-  
+
   init_bluetooth();
-  
+
   PlayTone(50, 2000);
   while(!is_start_msg_received()) {PlayTone(50, 300); Wait(500);}
   PlayTone(50, 2000);
@@ -143,6 +150,7 @@ task main(){
 	  robot_steer = steer_forward_or_take_inner_corner(robot_steer);
     }
 
+    send_data(robot_steer);
     set_motors(robot_steer);
   }
 }

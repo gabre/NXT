@@ -1,0 +1,39 @@
+#include "btio.nxc"
+
+#define RIGHT_MOTOR OUT_A
+#define LEFT_MOTOR  OUT_B
+
+#define DEFAULT_POWER						  20
+#define NORMALIZATION_TRESHOLD				  100
+
+int normalizePower(int p){
+  if (p > NORMALIZATION_TRESHOLD){
+    return NORMALIZATION_TRESHOLD;
+  } else if (p < -1 * NORMALIZATION_TRESHOLD){
+    return -1 * NORMALIZATION_TRESHOLD;
+  }
+  return p;
+}
+void set_motors(int robot_steer) {
+	OnFwd(LEFT_MOTOR, normalizePower(DEFAULT_POWER + robot_steer));
+  OnFwd(RIGHT_MOTOR, normalizePower(DEFAULT_POWER - robot_steer));
+}
+void stop_motors() {
+	OnFwd(LEFT_MOTOR, 0);
+  OnFwd(RIGHT_MOTOR, 0);
+}
+
+task main(){
+     PlayTone(100, 2000);
+     Wait(6000);
+     while(true) {
+     Wait(5000);
+     PlayTone(100, 200);
+     Wait(1000);
+     set_motors(30);
+     Wait(200);
+     stop_motors();
+     PlayTone(300, 200);
+     Wait(5000);
+     }
+}
